@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNV-Universal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-top">
+          <img src="img/logo-light.png" alt="" class="logo header-top__logo" />
+          <ul class="navbar header-top__navbar">
+            <li class="navbar__item"><a href="#" class="navbar__link">Статьи</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Новости</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Горячее</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">HTML</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">CSS</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">JavaScript</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Web Design</a></li>
+          </ul>
+          <!-- /.navbar header-top__navbar -->
+          <button data-toggle="modal" class="modbutton header-top__button">оставить заявку</button>
+          <!-- /.button header-top__button -->
+        </div>
+        <!-- /.header-top -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.header -->
+
+    <h1>Спасибо за заявку, менеджер свяжется с Вами в ближайшее время!</h1>
+    <a href="index.html">Вернуться на главную</a>
+    <h2>Данная страница будет завершена позднее</h2>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <svg class="modal__icon">
+            <use href="img/icons.svg#close"></use>
+          </svg>
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Ваша заявка</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Ваше имя*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone"
+            placeholder="Ваш номер телефона*"
+            name="phone"
+            required
+            minlength="18"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Ваш email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Ваша заявка"
+            name="message"
+          ></textarea>
+          <div class="modal__send">
+            <button class="button modal__button" aria-label="Send booking form button">
+              Отправить
+            </button>
+            <span class="modal__required">* Обязательные поля</span>
+          </div>
+          <!-- /.modal__send -->
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

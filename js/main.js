@@ -34,17 +34,16 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Please specify your name",
-          minlength: "Name should be at least 2 symbols long",
+          required: "Пожалуйста укажите Ваше имя",
+          minlength: "Имя должно содержать как минимум 2 символа",
         },
         email: {
-          required: "Please enter email so we could contact you",
-          //required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          required: "Пожалуйста введите Ваш email",
+          email: "Email должен быть в формате name@domain.com",
         },
         phone: {
-          required: "Please enter a phone number",
-          minlength: "Enter +7 (000) 000-00-00 format",
+          required: "Пожалуйста введите Ваш номер телефона",
+          minlength: "Введите номер в формате +7 (000) 000-00-00",
         },
       },
     });
