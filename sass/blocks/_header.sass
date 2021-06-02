@@ -1,5 +1,6 @@
 .header
   background-color: $header-bg
+  max-height: 545px
   &-top
     padding: 15px 0
     max-height: 70px
@@ -7,6 +8,8 @@
     flex-direction: row
     align-items: center
     justify-content: space-between
+  &-bottom
+    margin-top: 30px
 .logo
   max-width: 163px
   max-height: 40px
@@ -22,7 +25,7 @@
     text-decoration: none
     color: $text-light
     font-weight: 900
-.button
+.modbutton
   padding: 10px 65px
   background-color: $modal-button
   border: none
@@ -30,3 +33,100 @@
   line-height: 20px
   text-transform: uppercase
   border-radius: 10px
+.hero
+  display: grid
+  grid-template-columns: 877px 263px
+  background-color: #FFFFFF
+  border-radius: 10px
+  overflow: hidden
+  &-left
+    background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 55px 225px 100px 55px
+    min-height: 570px
+    color: $text-light
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &-right
+    padding: 20px 25px 28px 25px
+    display: grid
+    grid-template-rows: 39px repeat(5, 1fr)
+    &__title
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $text-dark
+    &__card
+      padding-top: 17px
+      border-top: 1px solid #D9DADB
+    &__subtitle
+      margin-bottom: 8px
+      &--accent1
+        color: #3BBDC4
+      &--accent2
+        color: #6E99AE
+      &--accent3
+        color: #AC8EE3
+      &--accent4
+        color: #FFA34D
+      &--accent5
+        color: #3DC47E
+    &__text
+      color: $text-primary
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+.author
+  display: flex
+  flex-direction: row
+  align-items: center
+  &__avatar
+    width: 45px
+    height: 45px
+  &__info
+    margin-left: 10px
+  &__name
+    font-size: 14px
+    opacity: 0.85
+  &__job
+    font-size: 12px
+    line-height: 15px
+    opacity: 0.4
+.main
+  &__subtitle
+    color: #4592FF
+    margin-bottom: 20px
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    margin-bottom: 50px
+.button
+  padding: 10px 20px
+  border-radius: 20px
+  background-color: $button
+  border: none
+  display: flex
+  align-items: center
+  &__text
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $text-light
+  &__arrow
+    fill: $text-light
+    width: 20px
+    height: 20px
+    margin-left: 5px

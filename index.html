@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SaaS-landing</title>
+    <title>UNV-Universal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
@@ -28,13 +28,122 @@
             <li class="navbar__item"><a href="#" class="navbar__link">Web Design</a></li>
           </ul>
           <!-- /.navbar header-top__navbar -->
-          <button class="button header-top__request">оставить заявку</button>
-          <!-- /.button header-top__request -->
+          <button data-toggle="modal" class="modbutton header-top__button">оставить заявку</button>
+          <!-- /.button header-top__button -->
         </div>
         <!-- /.header-top -->
+        <div class="hero header-bottom">
+          <div class="hero-left">
+            <div class="author hero-left__author">
+              <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
+              <div class="author__info">
+                <h3 class="author__name">Давид Гуров</h3>
+                <span class="author__job">Разработчик</span>
+              </div>
+            </div>
+            <div class="main hero-left__title">
+              <h4 class="subtitle main__subtitle">Javascript</h4>
+              <h1 class="main__title">Расширение Chrome защищает от атак</h1>
+              <button class="button hero-left__button">
+                <span class="button__text">Читать далее</span>
+                <svg class="button__arrow">
+                  <use xlink:href="img/icons.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- /.hero-left -->
+          <div class="hero-right">
+            <h2 class="hero-right__title">Рекомендуем</h2>
+            <div class="card hero-right__card">
+              <h4 class="subtitle hero-right__subtitle--accent1">css</h4>
+              <h3 class="hero-right__text">
+                Как использовать CSS float после того, как вышел Flexbox
+              </h3>
+            </div>
+            <div class="card hero-right__card">
+              <h4 class="subtitle hero-right__subtitle--accent2">javascript</h4>
+              <h3 class="hero-right__text">На каком стандарте писать скрипты, если я фрилансер</h3>
+            </div>
+            <div class="card hero-right__card">
+              <h4 class="subtitle hero-right__subtitle--accent3">html</h4>
+              <h3 class="hero-right__text">
+                Правильно вставляем картинку на сайт для Retina дисплея
+              </h3>
+            </div>
+            <div class="card hero-right__card">
+              <h4 class="subtitle hero-right__subtitle--accent4">Web design</h4>
+              <h3 class="hero-right__text">ТОП-10 плагинов для Figma</h3>
+            </div>
+            <div class="card hero-right__card">
+              <h4 class="subtitle hero-right__subtitle--accent5">CSS</h4>
+              <h3 class="hero-right__text">
+                Возможности CSS Grid Layout , которые уже можно применять
+              </h3>
+            </div>
+          </div>
+          <!-- /.hero-right -->
+        </div>
+        <!-- /.hero header-bottom -->
       </div>
       <!-- /.container -->
     </div>
     <!-- /.header -->
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <svg class="modal__icon">
+            <use href="img/icons.svg#close"></use>
+          </svg>
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Ваша заявка</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Ваше имя*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone"
+            placeholder="Ваш номер телефона*"
+            name="phone"
+            required
+            minlength="18"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Ваш email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Ваша заявка"
+            name="message"
+          ></textarea>
+          <div class="modal__send">
+            <button class="button modal__button" aria-label="Send booking form button">
+              Отправить
+            </button>
+            <span class="modal__required">* Обязательные поля</span>
+          </div>
+          <!-- /.modal__send -->
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
