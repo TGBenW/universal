@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Lato Heavy';
+  src: url("../fonts/Lato Heavy.woff2") format("woff2"), url("../fonts/Lato Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: 'Lato Heavy Italic';
+  src: url("../fonts/Lato Heavy Italic.woff2") format("woff2"), url("../fonts/Lato Heavy Italic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+.header {
+  background-color: #262D33;
+}
+
+.header-top {
+  padding: 15px 0;
+  max-height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 163px;
+  max-height: 40px;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  min-width: 540px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+
+.button {
+  padding: 10px 65px;
+  background-color: #656B70;
+  border: none;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
