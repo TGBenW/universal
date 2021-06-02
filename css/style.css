@@ -24,7 +24,7 @@
 
 body {
   background-color: #E5E5E5;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -46,7 +46,7 @@ h2, h3, h4 {
 }
 
 .subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
@@ -301,6 +301,10 @@ button {
 }
 
 .modal__title {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.5px;
   font-style: normal;
   font-size: 18px;
   line-height: 23px;
@@ -334,14 +338,22 @@ button {
 }
 
 .modal__required {
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #E0E0E0;
+  opacity: 0.8;
+  color: #FFFFFF;
 }
 
 .modal__button {
   cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 
 @media (min-width: 992px) {
