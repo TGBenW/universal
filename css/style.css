@@ -365,10 +365,52 @@ button {
   color: #FFFFFF;
 }
 
+.addvertizer {
+  margin-top: 155px;
+}
+
+.addread {
+  background-color: #30363D;
+  padding: 25px 0 30px 0;
+  max-height: 130px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.addread__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addread__link:not(:last-child) {
+  border-right: 1px solid #4B5157;
+}
+
+.addread__title {
+  color: #FFFFFF;
+  margin-left: 25px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.addread__image {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 25px;
+}
+
 @media (min-width: 992px) {
   .navbar__link:hover,
   .hero-right__link:hover,
-  .main__title:hover {
+  .main__title:hover,
+  .addread__title:hover {
     text-decoration: underline;
   }
   .modbutton:hover {
