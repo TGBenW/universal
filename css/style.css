@@ -36,11 +36,6 @@ body {
   margin: auto;
 }
 
-h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
 .avatar {
   border-radius: 50%;
 }
@@ -53,6 +48,7 @@ h2, h3, h4 {
   line-height: 15px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 button {
@@ -134,7 +130,7 @@ button {
 }
 
 .hero-right__title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -173,13 +169,18 @@ button {
   color: #3DC47E;
 }
 
+.hero-right__link {
+  text-decoration: none;
+}
+
 .hero-right__text {
   color: #4B5157;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 }
 
 .author {
@@ -198,6 +199,7 @@ button {
 }
 
 .author__name {
+  margin: 0;
   font-size: 14px;
   opacity: 0.85;
 }
@@ -210,7 +212,12 @@ button {
 
 .main__subtitle {
   color: #4592FF;
+  margin: 0;
   margin-bottom: 20px;
+}
+
+.main__link {
+  text-decoration: none;
 }
 
 .main__title {
@@ -219,6 +226,8 @@ button {
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
+  color: #FFFFFF;
+  margin: 0;
   margin-bottom: 50px;
 }
 
@@ -232,7 +241,7 @@ button {
 }
 
 .button__text {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -301,7 +310,7 @@ button {
 }
 
 .modal__title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -338,7 +347,7 @@ button {
 }
 
 .modal__required {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
@@ -348,7 +357,7 @@ button {
 
 .modal__button {
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -357,7 +366,9 @@ button {
 }
 
 @media (min-width: 992px) {
-  .navbar__link:hover {
+  .navbar__link:hover,
+  .hero-right__link:hover,
+  .main__title:hover {
     text-decoration: underline;
   }
   .modbutton:hover {

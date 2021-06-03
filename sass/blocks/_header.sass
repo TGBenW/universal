@@ -77,6 +77,8 @@
         color: #FFA34D
       &--accent5
         color: #3DC47E
+    &__link
+      text-decoration: none
     &__text
       color: $text-primary
       font-family: $lato
@@ -84,6 +86,7 @@
       font-weight: normal
       font-size: 14px
       line-height: 20px
+      margin: 0
 .author
   display: flex
   flex-direction: row
@@ -94,6 +97,7 @@
   &__info
     margin-left: 10px
   &__name
+    margin: 0
     font-size: 14px
     opacity: 0.85
   &__job
@@ -103,13 +107,18 @@
 .main
   &__subtitle
     color: #4592FF
+    margin: 0
     margin-bottom: 20px
+  &__link
+    text-decoration: none
   &__title
     font-family: Roboto Slab
     font-style: normal
     font-weight: bold
     font-size: 40px
     line-height: 50px
+    color: $text-light
+    margin: 0
     margin-bottom: 50px
 .button
   padding: 10px 20px
