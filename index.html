@@ -900,7 +900,30 @@
     </div>
     <!-- /.selection-section -->
     <section class="newsletter-section">
-      <div class="container"></div>
+      <div class="container">
+        <div class="newsletter">
+          <h2 class="newsletter__title">Подпишитесь на нашу рассылку</h2>
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe form"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <button class="subscribe__button" aria-label="Subscribe button">Подписаться</button>
+          </form>
+        </div>
+        <!-- /.newsletter -->
+      </div>
       <!-- /.container -->
     </section>
     <!-- /.newsletter-section -->

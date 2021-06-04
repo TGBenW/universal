@@ -56,6 +56,18 @@ body {
   margin: auto;
 }
 
+input, textarea {
+  outline: none;
+}
+
+.invalid {
+  color: #FF4F52;
+}
+
+.valid {
+  color: green;
+}
+
 .avatar {
   border-radius: 50%;
 }
@@ -1464,6 +1476,66 @@ button {
   right: 0;
 }
 
+.newsletter {
+  padding: 60px 195px 70px 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-section {
+  background-color: #FFFFFF;
+}
+
+.newsletter__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #262D33;
+}
+
+.subscribe {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 459px;
+}
+
+.subscribe__input {
+  border: 1px solid #D9DADB;
+  border-radius: 5px;
+  min-width: 313px;
+  height: 40px;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.subscribe__button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #4592FF;
+  border: none;
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-right: 5px;
+}
+
+.subscribe > label {
+  position: absolute;
+  top: 45px;
+  border: none;
+  font-size: 14px;
+}
+
 @media (min-width: 992px) {
   .navbar__link:hover,
   .hero-right__link:hover,
@@ -1477,10 +1549,12 @@ button {
   .modbutton:active {
     background-color: #767d83;
   }
-  .button:hover {
+  .button:hover,
+  .subscribe__button:hover {
     background-color: #217dff;
   }
-  .button:active {
+  .button:active,
+  .subscribe__button:active {
     background-color: #69a7ff;
   }
   /** .user__avatar
