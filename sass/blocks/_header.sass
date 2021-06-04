@@ -21,10 +21,11 @@
   flex-direction: row
   justify-content: space-between
   &__item
+    font-family: $lato-900
+    font-weight: 900
   &__link
     text-decoration: none
     color: $text-light
-    font-weight: 900
 .modbutton
   padding: 10px 65px
   background-color: $modal-button
@@ -54,7 +55,8 @@
     display: grid
     grid-template-rows: 39px repeat(5, 1fr)
     &__title
-      font-family: $lato
+      margin: 0
+      font-family: $lato-900
       font-style: normal
       font-weight: 900
       font-size: 14px
@@ -81,9 +83,9 @@
       text-decoration: none
     &__text
       color: $text-primary
-      font-family: $lato
+      font-family: $lato-400
       font-style: normal
-      font-weight: normal
+      font-weight: 400
       font-size: 14px
       line-height: 20px
       margin: 0
@@ -128,7 +130,7 @@
   display: flex
   align-items: center
   &__text
-    font-family: $lato
+    font-family: $lato-900
     font-style: normal
     font-weight: 900
     font-size: 14px

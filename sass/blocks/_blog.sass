@@ -1,0 +1,179 @@
+.blog
+  display: grid
+  grid-template-columns: 848px 263px
+  grid-template-rows: 770px 1fr
+  grid-column-gap: 30px
+  height: 1470px
+  &-left
+    grid-row: 1 / 3
+    padding: 0 25px
+    border-radius: 10px
+    background-color: #FFFFFF
+    overflow: hidden
+    display: grid
+    grid-template-rows: repeat(6, 1fr)
+  &-right
+    padding: 20px 0 14px 0
+    border-radius: 10px
+    background-color: #FFFFFF
+    overflow: hidden
+    display: grid
+    grid-template-rows: 39px 1px 1fr 1px 31px
+    &__title
+      margin: 0 25px 0 25px
+      font-family: $lato-900
+      font-style: normal
+      font-weight: 900
+      font-size: 13px
+      //font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $text-dark
+    &__line
+      background-color: $line
+      width: 100%
+      margin: 0
+    &__posts
+      padding: 0 25px
+      display: grid
+      grid-template-rows: repeat(7, 1fr)
+    &__more
+      margin: auto
+      font-family: $lato-900
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+.bcard
+  padding: 25px 0
+  display: grid
+  grid-template-columns: 336px 437px
+  grid-column-gap: 25px
+  border-bottom: 1px solid $line
+  &__image
+    width: 100%
+    max-height: 195px
+    object-fit: cover
+  &-description
+    &__head
+      width: 100%
+      display: flex
+      flex-direction: row
+      align-items: flex-end
+      justify-content: space-between
+      margin-bottom: 15px
+    &__subtitle
+      &--accent6
+        color: $accent7
+      &--accent7
+        color: $accent1
+      &--accent8
+        color: $accent8
+      &--accent9
+        color: $accent1
+      &--accent10
+        color: $accent8
+      &--accent11
+        color: $accent3
+    &__bookmark
+    &__title
+      margin: 0
+      margin-bottom: 10px
+      min-height: 50px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $text-dark
+    &__text
+      margin: 0
+      margin-bottom: 20px
+      font-family: $lato-400
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-primary
+    &__details
+      color: $text-secondary
+      fill: $icon
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: start
+    &__date
+      font-family: $lato-400
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: inherit
+      margin-right: 11px
+.comments
+  &-blog
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: start
+    margin-right: 11px
+    &__icon
+      margin-right: 5px
+      width: 15px
+      height: 15px
+.likes
+  &-blog
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: start
+    &__icon
+      margin-right: 5px
+      width: 15px
+      height: 15px
+.bookmark
+  width: 20px
+  height: 20px
+  cursor: pointer
+.recent
+  position: relative
+  min-height: 94px
+  padding: 17px 0
+  display: grid
+  grid-template-columns: 60px 143px
+  grid-column-gap: 10px
+  &:not(:last-child)
+    border-bottom: 1px solid $line
+  &__image
+    width: 100%
+    min-height: 60px
+    object-fit: cover
+  &__details
+    min-height: 60px
+  &__number
+    position: absolute
+    top: 20px
+    right: 0
+    font-family: $lato-800-italic
+    font-size: 70px
+    line-height: 50px
+    color: $text-dark
+    opacity: 0.08
+  &__title
+    margin: 0
+    margin-bottom: 5px
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    //line-height: 20px
+    line-height: 18px
+    color: $text-primary
+  &__time
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $text-secondary

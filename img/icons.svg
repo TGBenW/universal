@@ -23,4 +23,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M25 50c13.807 0 25-11.193 25-25S38.807 0 25 0 0 11.193 0 25s11.193 25 25 25z" fill="#4267B2"></path>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M29.623 16.004L27.225 16c-2.695 0-4.436 1.739-4.436 4.43v2.042h-2.412a.372.372 0 00-.377.367v2.96c0 .203.169.367.377.367h2.412v7.467c0 .203.168.367.377.367h3.146a.372.372 0 00.378-.367v-7.467h2.82a.372.372 0 00.377-.367v-2.96c0-.097-.04-.19-.11-.26a.383.383 0 00-.267-.107h-2.82v-1.731c0-.832.203-1.255 1.317-1.255h1.616a.372.372 0 00.377-.367V16.37a.372.372 0 00-.377-.367z" fill="#fff"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="bookmark">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1h10a2 2 0 012 2v16l-6.905-5L3 19V3a2 2 0 012-2z" fill="#BCBFC2"></path>
+  </symbol>
 </svg>
