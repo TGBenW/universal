@@ -1247,6 +1247,7 @@ button {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid blue;
+  background-color: #B4D1E0;
 }
 
 .slides-slider {
@@ -1406,6 +1407,61 @@ button {
   font-size: 14px;
   line-height: 20px;
   color: #C5E4FC;
+}
+
+.ccard2 {
+  padding: 35px 307px 50px 35px;
+  position: relative;
+}
+
+.ccard2__subtitle {
+  margin-bottom: 20px;
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #6E99AE;
+}
+
+.ccard2__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+}
+
+.ccard2__text {
+  margin: 0;
+  margin-bottom: 45px;
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.ccard2__circle {
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  top: 65px;
+  right: 30px;
+  border-radius: 50%;
+  background-color: #D1E2EB;
+}
+
+.ccard2__image {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: 992px) {
