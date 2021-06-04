@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UNV-Universal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -789,6 +791,81 @@
       <!-- /.container -->
     </section>
     <!-- /.blog-section -->
+    <div class="selection-section">
+      <div class="container">
+        <div class="selection">
+          <div class="selection-block1">
+            <div class="slides selection-block1__slides">
+              <!-- Slider main container -->
+              <div class="swiper-container slides-slider slides__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slides-slider__item">
+                    <img src="img/slide1.jpg" alt="slide photo" class="slides-slider__image" />
+                  </div>
+                  <div class="swiper-slide slides-slider__item">
+                    <img src="img/slide2.jpg" alt="slide photo" class="slides-slider__image" />
+                  </div>
+                  <div class="swiper-slide slides-slider__item">
+                    <img src="img/slide3.jpg" alt="slide photo" class="slides-slider__image" />
+                  </div>
+                  <div class="swiper-slide slides-slider__item">
+                    <img src="img/slide4.jpg" alt="slide photo" class="slides-slider__image" />
+                  </div>
+                  <div class="swiper-slide slides-slider__item">
+                    <img src="img/slide5.jpg" alt="slide photo" class="slides-slider__image" />
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination slides-slider__pagination"></div>
+              </div>
+              <!-- /.swiper-container -->
+            </div>
+            <div class="ccard selection-block1__ccard">
+              <span class="ccard__sticker">Горячее</span>
+              <div class="ccard__outer">
+                <div class="ccard-content">
+                  <img
+                    src="img/oksana-pushkina.png"
+                    alt="photo: Оксана Пушкина"
+                    class="avatar ccard-content__avatar"
+                  />
+                  <h3 class="ccard-content__name">Оксана Пушкина</h3>
+                  <span class="ccard-content__job">Разработчик</span>
+                  <h1 class="ccard-content__title">
+                    Выбор читателей: где удобнее работать фрилансеру
+                  </h1>
+                  <button
+                    onclick="document.location='articles/article.html'"
+                    class="button ccard-content__button"
+                  >
+                    <svg class="button__images">
+                      <use xlink:href="img/icons.svg#images"></use>
+                    </svg>
+                    <span class="button__text">Смотреть фото</span>
+                    <span class="button__count">26</span>
+                  </button>
+                </div>
+                <!-- /.ccard__content -->
+              </div>
+              <!-- /.ccard__outer -->
+            </div>
+            <!-- /.ccard selection-block1__ccard -->
+          </div>
+          <!-- /.selection-block1 -->
+          <div class="selection-block2">2</div>
+          <!-- /.selection-block2 -->
+          <div class="selection-block3">3</div>
+          <!-- /.selection-block3 -->
+          <div class="selection-block4">4</div>
+          <!-- /.selection-block4 -->
+        </div>
+        <!-- /.selection -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.selection-section -->
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
@@ -842,6 +919,7 @@
     <!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>

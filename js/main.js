@@ -53,4 +53,19 @@ $(document).ready(function () {
   $(document).ready(function () {
     $(".phone").mask("+7 (000) 000-00-00");
   });
+
+  //Swiper
+  const swiper = new Swiper(".swiper-container", {
+    direction: "horizontal",
+    loop: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    autoplay: {
+      delay: 2000,
+    },
+  });
 });
