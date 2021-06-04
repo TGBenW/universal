@@ -491,6 +491,7 @@ button {
   display: grid;
   grid-template-rows: 124px 1px 45px;
   background-color: #3BBDC4;
+  max-height: 170px;
 }
 
 .post-large2 {
@@ -505,6 +506,7 @@ button {
 
 .post-regular2 {
   padding: 25px 25px 30px 25px;
+  max-height: 170px;
 }
 
 .post-regular2__title {
@@ -541,6 +543,7 @@ button {
 
 .post-regular3 {
   padding: 30px 36px 40px 36px;
+  max-height: 170px;
 }
 
 .post-regular3__title {
@@ -869,6 +872,7 @@ button {
 }
 
 .large3-bottom__title {
+  margin: 0;
   font-family: Roboto Slab, serif;
   font-style: normal;
   font-weight: bold;
@@ -895,6 +899,53 @@ button {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+.investigation {
+  height: 270px;
+  margin: 60px 0;
+}
+
+.investigation-parallax {
+  position: relative;
+  height: 100%;
+}
+
+.investigation-parallax:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+}
+
+.investigation-wrapper {
+  position: relative;
+  padding: 50px 145px 55px 145px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.investigation-wrapper__title {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  max-width: 850px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.investigation-wrapper__button {
+  position: relative;
+  margin: auto;
+  z-index: 10;
 }
 
 @media (min-width: 992px) {
