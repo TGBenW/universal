@@ -55,7 +55,7 @@ $(document).ready(function () {
   });
 
   //Swiper
-  const swiper = new Swiper(".swiper-container", {
+  const swiperIndex = new Swiper(".slides-slider", {
     direction: "horizontal",
     loop: true,
     pagination: {
@@ -64,6 +64,24 @@ $(document).ready(function () {
     },
     autoplay: {
       delay: 2000,
+    },
+  });
+
+  const gallerySlider = new Swiper(".gallery-slider", {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".gallery-slider__button--next",
+      prevEl: ".gallery-slider__button--prev",
+    },
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });
 });

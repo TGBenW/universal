@@ -1,0 +1,93 @@
+.gallery
+  display: grid
+  grid-template-columns: 877px 1px 262px
+  grid-template-rows: 555px 70px
+  border-radius: 10px
+  overflow: hidden
+  &-slider
+    grid-column: 1 / 4
+    width: 100%
+    height: 100%
+    &__item
+      //width: 100%
+      //height: 100%
+      position: relative
+      overflow: hidden
+      &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        //background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        //z-index: 10
+    &__image
+      object-fit: cover
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 60px
+      height: 60px
+      border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 60px
+      background-color: transparent
+      &--prev
+        left: 35px
+        background-image: url(../img/arrow-prev.svg)
+      &--next
+        right: 35px
+        background-image: url(../img/arrow-next.svg)
+  &__info
+    padding: 25px 35px
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    border-radius: 0 0 0 10px
+    border: 1px solid $line
+    border-top: none
+    border-right: none
+  &__line
+    background-color: $line
+    margin: 0
+  &__author
+    padding: 12px 60px 12px 30px
+    border-radius: 0 0 10px 0
+    border: 1px solid $line
+    border-top: none
+    border-left: none
+.aauthor
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  &__avatar
+    width: 45px
+    height: 45px
+    margin-right: 10px
+  &__info
+    line-height: 20px
+  &__name
+    margin: 0
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-primary
+  &__job
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $text-secondary
