@@ -1536,11 +1536,158 @@ button {
   font-size: 14px;
 }
 
+.footer {
+  padding-bottom: 55px;
+}
+
+.footer-section {
+  background-color: #FFFFFF;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #D9DADB;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-bottom: 64px;
+}
+
+.footer-top__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  border-top: 5px solid;
+}
+
+.footer-top__list--list1 {
+  border-color: #FF4F52;
+}
+
+.footer-top__list--list2 {
+  border-color: #AC8EE3;
+}
+
+.footer-top__list--list3 {
+  border-color: #4592FF;
+}
+
+.footer-top__list--list4 {
+  border-color: #FFA34D;
+}
+
+.footer-top__list--list5 {
+  border-color: #3DC47E;
+}
+
+.footer-top__list--list6 {
+  border-color: #6E99AE;
+}
+
+.footer-top__item {
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.footer-top__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-top__item:first-child {
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262D33;
+  margin-bottom: 25px;
+}
+
+.footer-top__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-middle {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-middle__navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-middle__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-middle__item {
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #262D33;
+  margin-left: 30px;
+}
+
+.footer-middle__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #939699;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-bottom__text {
+  margin: 0;
+  max-width: 750px;
+}
+
+.social {
+  min-width: 205px;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 15px;
+}
+
 @media (min-width: 992px) {
   .navbar__link:hover,
   .hero-right__link:hover,
   .main__title:hover,
-  .addread__title:hover {
+  .addread__title:hover,
+  .footer-top__link:hover,
+  .footer-middle__link:hover {
     text-decoration: underline;
   }
   .modbutton:hover {
