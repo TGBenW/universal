@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UNV-Universal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="aheader-section">
       <div class="container">
-        <div class="header-top">
-          <img src="../img/logo-light.png" alt="" class="logo header-top__logo" />
-          <ul class="navbar header-top__navbar">
+        <div class="aheader">
+          <img src="../img/logo-dark.png" alt="" class="logo aheader__logo" />
+          <ul class="navbar aheader__navbar">
             <li class="navbar__item"><a href="#" class="navbar__link">Статьи</a></li>
             <li class="navbar__item"><a href="#" class="navbar__link">Новости</a></li>
             <li class="navbar__item"><a href="#" class="navbar__link">Горячее</a></li>
@@ -27,20 +29,269 @@
             <li class="navbar__item"><a href="#" class="navbar__link">JavaScript</a></li>
             <li class="navbar__item"><a href="#" class="navbar__link">Web Design</a></li>
           </ul>
-          <!-- /.navbar header-top__navbar -->
-          <button data-toggle="modal" class="modbutton header-top__button">оставить заявку</button>
-          <!-- /.button header-top__button -->
+          <!-- /.navbar aheader__navbar -->
+          <button data-toggle="modal" class="modbutton aheader__button">оставить заявку</button>
+          <!-- /.button aheader__button -->
         </div>
-        <!-- /.header-top -->
+        <!-- /.aheader -->
       </div>
       <!-- /.container -->
-    </div>
-    <!-- /.header -->
+    </header>
+    <!-- /.aheader -->
+    <section class="ahero-section">
+      <div class="container">
+        <div class="ahero">
+          <div class="ahero-block1"></div>
+          <div class="ahero-block2">
+            <h4 class="subtitle ahero-block2__subtitle">Новости</h4>
+            <div class="ahero-block2__navigation">
+              <div class="home ahero-block2__home">
+                <svg class="home__icon">
+                  <use xlink:href="../img/icons.svg#home"></use>
+                </svg>
+                <a href="#" class="home__link">На главную</a>
+              </div>
+              <!-- /.__home -->
+              <div class="back ahero-block2__back">
+                <svg class="back__icon">
+                  <use xlink:href="../img/icons.svg#arrow"></use>
+                </svg>
+                <a href="#" class="back__link">Назад</a>
+              </div>
+              <!-- /.__back -->
+              <div class="forward ahero-block2__forward">
+                <a href="#" class="forward__link">Вперед</a>
+                <svg class="forward__icon">
+                  <use xlink:href="../img/icons.svg#arrow"></use>
+                </svg>
+              </div>
+              <!-- /.__forward -->
+            </div>
+            <!-- /.__navigation -->
+          </div>
+          <div class="ahero-block3">
+            <svg class="ahero-block3__icon">
+              <use xlink:href="../img/icons.svg#bookmark"></use>
+            </svg>
+          </div>
+          <div class="ahero-block4">
+            <h1 class="ahero-block4__title">
+              Новый налоговый режим для фрилансеров — налог на проф. доход
+            </h1>
+            <p class="ahero-block4__text">
+              Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто
+              работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+            </p>
+            <div class="ahero-block4__details">
+              <div class="date-ahero ahero-block4__date">
+                <svg class="date-ahero__icon">
+                  <use xlink:href="../img/icons.svg#clock"></use>
+                </svg>
+                <span class="date-ahero__date">6 августа, 10:30</span>
+              </div>
+              <!-- /.date ahero-block4__date -->
+              <div class="comments-ahero ahero-block4__comments">
+                <svg class="comments-ahero__icon">
+                  <use xlink:href="../img/icons.svg#comment"></use>
+                </svg>
+                <span class="comments-ahero__count">830</span>
+              </div>
+              <!-- /.comments ahero-block4__comments -->
+              <div class="likes-ahero ahero-block4__likes">
+                <svg class="likes-ahero__icon">
+                  <use xlink:href="../img/icons.svg#like"></use>
+                </svg>
+                <span class="likes-ahero__count">19</span>
+              </div>
+              <!-- /.likes ahero-block4__likes -->
+            </div>
+          </div>
+        </div>
+        <!-- /.ahero -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.ahero-section -->
 
-    <h1>Здесь будет статья "Новый налоговый режим для фрилансеров — налог на проф. доход"</h1>
-    <a href="../index.html">Вернуться на главную</a>
-    <h2>Данная страница будет завершена позднее</h2>
-
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter">
+          <h2 class="newsletter__title">Подпишитесь на нашу рассылку</h2>
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe form"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <button class="subscribe__button" aria-label="Subscribe button">Подписаться</button>
+          </form>
+        </div>
+        <!-- /.newsletter -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.newsletter-section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-top">
+            <ul class="footer-top__list footer-top__list--list1">
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Новости</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Обновления</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Экспресс</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Politics</a></li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Solar Eclipse</a>
+              </li>
+            </ul>
+            <!-- /.footer-top__list footer-top__list--list1 -->
+            <ul class="footer-top__list footer-top__list--list2">
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Статьи</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">HTML</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">CSS</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">JavaScript</a></li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Web Design</a>
+              </li>
+            </ul>
+            <!-- /.footer-top__list footer-top__list--list2 -->
+            <ul class="footer-top__list footer-top__list--list3">
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Видеоуроки</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Скринкасты</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Уроки</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Вебинары</a></li>
+            </ul>
+            <!-- /.footer-top__list footer-top__list--list3 -->
+            <ul class="footer-top__list footer-top__list--list4">
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Курсы</a></li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Платные интенсивы</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Бесплатные стримы</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Мастер-классы</a>
+              </li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Менторство</a></li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Буткемпы</a>
+              </li>
+            </ul>
+            <!-- /.footer-top__list footer-top__list--list4 -->
+            <ul class="footer-top__list footer-top__list--list5">
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Информация</a></li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Политика данных</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Оферта сайта</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Оферта сайта</a>
+              </li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Контакты</a>
+              </li>
+            </ul>
+            <!-- /.footer-top__list footer-top__list--list5 -->
+            <ul class="footer-top__list footer-top__list--list6">
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Категории</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Популярное</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Горячее</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Подборки</a></li>
+              <li class="footer-top__item"><a href="#" class="footer-top__link">Мнения</a></li>
+              <li class="footer-top__item">
+                <a href="#" class="footer-top__link">Мнения</a>
+              </li>
+            </ul>
+            <!-- /.footer-top__list footer-top__list--list6 -->
+          </div>
+          <!-- /.footer-top -->
+          <div class="footer-line"></div>
+          <!-- /.footer-line -->
+          <div class="footer-middle">
+            <div class="footer-middle__navbar">
+              <a href="#" class="footer-middle__logo">
+                <img src="../img/logo-blue.png" alt="" class="footer-middle__logo" />
+              </a>
+              <ul class="footer-middle__list">
+                <li class="footer-middle__item">
+                  <a href="#" class="footer-middle__link">Контакты</a>
+                </li>
+                <li class="footer-middle__item">
+                  <a href="#" class="footer-middle__link">Работа у нас</a>
+                </li>
+                <li class="footer-middle__item">
+                  <a href="#" class="footer-middle__link">Реклама</a>
+                </li>
+                <li class="footer-middle__item">
+                  <a data-toggle="modal" class="footer-middle__link">Обратная связь</a>
+                </li>
+              </ul>
+              <!-- /.footer-middle__list -->
+            </div>
+            <div class="social footer-middle__social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="https://ru-ru.facebook.com/" class="social__link">
+                    <svg class="social__logo social__logo-facebook">
+                      <use xlink:href="../img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://twitter.com/?lang=ru" class="social__link">
+                    <svg class="social__logo social__logo-twitter">
+                      <use xlink:href="../img/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.youtube.com/" class="social__link">
+                    <svg class="social__logo social__logo-youtube">
+                      <use xlink:href="../img/icons.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.instagram.com/" class="social__link">
+                    <svg class="social__logo social__logo-instagram">
+                      <use xlink:href="../img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer-middle -->
+          <div class="footer-line"></div>
+          <!-- /.footer-line -->
+          <div class="footer-bottom">
+            <p class="footer-bottom__text">
+              Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб
+              разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте
+              бесплатны, но при копировании, указывайте ссылку.
+            </p>
+            <span class="footer-bottom__copyright">© 2020 Universal Magazine</span>
+          </div>
+          <!-- /.footer-bottom -->
+        </div>
+        <!-- /.footer -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer-section -->
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
@@ -93,6 +344,8 @@
     </div>
     <!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/jquery.mask.min.js"></script>
     <script src="../js/main.js"></script>
