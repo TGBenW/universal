@@ -2,11 +2,13 @@
   padding-left: 95px
   position: relative
   &-section
-    padding-top: 60px
+    //padding-top: 60px
     padding-bottom: 45px
   &__text
+    position: relative
     margin: 15px 0
     max-width: 623px
+    z-index: 1
     &--letter
       margin: 0
       &:first-letter
@@ -22,6 +24,22 @@
         float: left
     &--notopindent
       margin-top: 0
+    &--special
+      padding-top: 65px
+      padding-bottom: 30px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $text-dark
+  &__quote
+    position: absolute
+    top: 50px
+    left: -20px
+    z-index: -5
+    width: 70px
+    height: 70px
   &__subtitle
     margin: 0
     padding-top: 30px
@@ -32,3 +50,150 @@
     font-size: 25px
     line-height: 30px
     color: $text-dark
+  &-card
+    position: absolute
+    top: 150px
+    right: 97px
+    width: 263px
+    height: 430px
+    color: $text-dark
+    &__top
+      margin: 0
+      margin-bottom: 20px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+    &__image
+      width: 100%
+      max-height: 180px
+      border-radius: 10px
+      margin-bottom: 15px
+    &__title
+      margin: 0
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+    &__text
+      font-family: $lato-400
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-primary
+    &__details
+      display: flex
+      flex-direction: row
+      align-items: center
+  &__tags
+  &__list
+    max-width: 653px
+    padding-top: 30px
+    padding-bottom: 60px
+    padding-left: 0
+    margin: 0
+    list-style-type: none
+    display: flex
+    flex-direction: row
+    align-items: center
+    border-bottom: 1px solid $line
+  &__item
+    font-family: $lato-900
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    padding: 5px 15px
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    &:not(:last-child)
+      margin-right: 10px
+  &__link
+    text-decoration: none
+    color: $text-dark
+  &__repost
+    padding-top: 30px
+    &-text
+      margin: 0
+      margin-bottom: 25px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $text-dark
+    &-buttons
+      display: flex
+      flex-direction: row
+      align-items: center
+.eye
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-right: 10px
+  &__icon
+    width: 15px
+    height: 15px
+    fill: $icon
+  &__count
+    margin-left: 5px
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $text-secondary
+.acomments
+  display: flex
+  flex-direction: row
+  align-items: center
+  &__icon
+    width: 15px
+    height: 15px
+    fill: $icon
+  &__count
+    margin-left: 5px
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $text-secondary
+.abutton
+  width: 132px
+  height: 40px
+  padding: 10px 20px
+  border-radius: 20px
+  background-color: $button
+  border: none
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__text
+    font-family: $lato-900
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $text-light
+    &:not(:last-child)
+      //margin-right: 5px
+    &-count
+      font-family: $lato-400
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      &--like
+        color: #FFC4C9
+      &--share
+        color: #BBC6FF
+      &--tweet
+        color: #C5E4FC
+  &__icon
+    fill: $text-light
+    width: 20px
+    height: 20px

@@ -97,8 +97,16 @@ img {
   max-width: 100%;
 }
 
-button {
+button, .abutton {
   cursor: pointer;
+}
+
+.href {
+  text-decoration: none;
+}
+
+.href:not(:last-child) {
+  margin-right: 14px;
 }
 
 .header {
@@ -451,6 +459,7 @@ button {
 }
 
 .ahero-section {
+  margin-bottom: 60px;
   min-height: 590px;
   background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg.jpg") center no-repeat #262D33;
   background-size: cover;
@@ -757,13 +766,14 @@ button {
 }
 
 .article-section {
-  padding-top: 60px;
   padding-bottom: 45px;
 }
 
 .article__text {
+  position: relative;
   margin: 15px 0;
   max-width: 623px;
+  z-index: 1;
 }
 
 .article__text--letter {
@@ -787,6 +797,26 @@ button {
   margin-top: 0;
 }
 
+.article__text--special {
+  padding-top: 65px;
+  padding-bottom: 30px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+}
+
+.article__quote {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  z-index: -5;
+  width: 70px;
+  height: 70px;
+}
+
 .article__subtitle {
   margin: 0;
   padding-top: 30px;
@@ -797,6 +827,202 @@ button {
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
+}
+
+.article-card {
+  position: absolute;
+  top: 150px;
+  right: 97px;
+  width: 263px;
+  height: 430px;
+  color: #262D33;
+}
+
+.article-card__top {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.article-card__image {
+  width: 100%;
+  max-height: 180px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.article-card__title {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.article-card__text {
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.article-card__details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.article__list {
+  max-width: 653px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #D9DADB;
+}
+
+.article__item {
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 15px;
+  border: 1px solid #D9DADB;
+  border-radius: 5px;
+}
+
+.article__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.article__link {
+  text-decoration: none;
+  color: #262D33;
+}
+
+.article__repost {
+  padding-top: 30px;
+}
+
+.article__repost-text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+}
+
+.article__repost-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.eye {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.eye__icon {
+  width: 15px;
+  height: 15px;
+  fill: #BCBFC2;
+}
+
+.eye__count {
+  margin-left: 5px;
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
+
+.acomments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.acomments__icon {
+  width: 15px;
+  height: 15px;
+  fill: #BCBFC2;
+}
+
+.acomments__count {
+  margin-left: 5px;
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
+
+.abutton {
+  width: 132px;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #4592FF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.abutton__text {
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.abutton__text-count {
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.abutton__text-count--like {
+  color: #FFC4C9;
+}
+
+.abutton__text-count--share {
+  color: #BBC6FF;
+}
+
+.abutton__text-count--tweet {
+  color: #C5E4FC;
+}
+
+.abutton__icon {
+  fill: #FFFFFF;
+  width: 20px;
+  height: 20px;
 }
 
 .addvertizer {
@@ -1337,6 +1563,7 @@ button {
 }
 
 .gallery {
+  padding-bottom: 30px;
   display: grid;
   grid-template-columns: 877px 1px 262px;
   grid-template-rows: 555px 70px;
