@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  var tabsItem = $(".hero-right__card");
+  var contentItem = $(".hero-left");
+  tabsItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+    tabsItem.removeClass("hero-right__card--active");
+    contentItem.removeClass("hero-left--active");
+    $(activeContent).addClass("hero-left--active");
+    $(this).addClass("hero-right__card--active");
+  });
+
   var modalButton = $("[data-toggle=modal]");
   modalButton.on("click", openModal);
   var closeModalButton = $(".modal__close");
@@ -27,6 +37,18 @@ $(document).ready(function () {
 
   var modalOverlay = $(".modal__overlay");
   modalOverlay.on("click", closeModal);
+
+  //bookmark colorization
+  var bookmarks = document.querySelectorAll("#bookmark");
+  bookmarks.forEach(function (entry) {
+    entry.addEventListener("click", function (event) {
+      event.target.classList.toggle("bookmarked");
+    });
+  });
+
+  //comment spoiler
+  /* var commentButton = document.querySelector(".commentation-more");
+  var comment = document.querySelectorAll(".commentation-block"); */
 
   //form validation
   $(".form").each(function () {
@@ -88,3 +110,12 @@ $(document).ready(function () {
     },
   });
 });
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

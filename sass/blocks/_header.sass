@@ -41,22 +41,36 @@
   border-radius: 10px
   overflow: hidden
   &-left
-    background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg")
     background-repeat: no-repeat
     background-size: cover
     background-position: center
     padding: 55px 225px 100px 55px
     min-height: 570px
     color: $text-light
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+    display: none
+    &--image1
+      background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg")
+    &--image2
+      background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-2.jpg")
+    &--image3
+      background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-3.jpg")
+    &--image4
+      background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-4.jpg")
+    &--image5
+      background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-5.jpg")
+    &--active
+      display: flex
+      flex-direction: column
+      justify-content: space-between
   &-right
-    padding: 20px 25px 28px 25px
+    //padding: 20px 25px 28px 25px
+    padding: 20px 0 28px 0
     display: grid
     grid-template-rows: 39px repeat(5, 1fr)
     &__title
       margin: 0
+      padding-left: 25px
+      padding-right: 25px
       font-family: $lato-900
       font-style: normal
       font-weight: 900
@@ -68,8 +82,13 @@
     &__card
       padding-top: 17px
       border-top: 1px solid #D9DADB
+      cursor: pointer
+      &--active
+        background: #F5F5F5
     &__subtitle
       margin-bottom: 8px
+      padding-left: 25px
+      padding-right: 25px
       &--accent1
         color: $accent1
       &--accent2
@@ -83,6 +102,8 @@
     &__link
       text-decoration: none
     &__text
+      padding-left: 25px
+      padding-right: 25px
       color: $text-primary
       font-family: $lato-400
       font-style: normal

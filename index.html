@@ -21,13 +21,13 @@
         <div class="header-top">
           <img src="img/logo-light.png" alt="" class="logo header-top__logo" />
           <ul class="navbar header-top__navbar">
-            <li class="navbar__item"><a href="#" class="navbar__link">Статьи</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__link">Новости</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__link">Горячее</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__link">HTML</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__link">CSS</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__link">JavaScript</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__link">Web Design</a></li>
+            <li class="navbar__item"><a href="#articles" class="navbar__link">Статьи</a></li>
+            <li class="navbar__item"><a href="#blog" class="navbar__link">Новости</a></li>
+            <li class="navbar__item"><a href="#selection" class="navbar__link">Горячее</a></li>
+            <li class="navbar__item"><a href="#footer" class="navbar__link">HTML</a></li>
+            <li class="navbar__item"><a href="#footer" class="navbar__link">CSS</a></li>
+            <li class="navbar__item"><a href="#footer" class="navbar__link">JavaScript</a></li>
+            <li class="navbar__item"><a href="#footer" class="navbar__link">Web Design</a></li>
           </ul>
           <!-- /.navbar header-top__navbar -->
           <button data-toggle="modal" class="modbutton header-top__button">оставить заявку</button>
@@ -35,7 +35,7 @@
         </div>
         <!-- /.header-top -->
         <div class="hero header-bottom">
-          <div class="hero-left">
+          <div id="art1" class="hero-left hero-left--image1 hero-left--active">
             <div class="author hero-left__author">
               <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
               <div class="author__info">
@@ -60,9 +60,111 @@
             </div>
           </div>
           <!-- /.hero-left -->
+          <div id="art2" class="hero-left hero-left--image2">
+            <div class="author hero-left__author">
+              <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
+              <div class="author__info">
+                <h3 class="author__name">Давид Гуров</h3>
+                <span class="author__job">Разработчик</span>
+              </div>
+            </div>
+            <div class="main hero-left__title">
+              <h4 class="subtitle main__subtitle">Javascript</h4>
+              <a href="#" class="main__link">
+                <h1 class="main__title">На каком стандарте писать скрипты, если я фрилансер</h1>
+              </a>
+              <button
+                onclick="document.location='articles/article.html'"
+                class="button hero-left__button"
+              >
+                <span class="button__text">Читать далее</span>
+                <svg class="button__arrow">
+                  <use xlink:href="img/icons.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- /.hero-left -->
+          <div id="art3" class="hero-left hero-left--image3">
+            <div class="author hero-left__author">
+              <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
+              <div class="author__info">
+                <h3 class="author__name">Давид Гуров</h3>
+                <span class="author__job">Разработчик</span>
+              </div>
+            </div>
+            <div class="main hero-left__title">
+              <h4 class="subtitle main__subtitle">html</h4>
+              <a href="#" class="main__link">
+                <h1 class="main__title">Правильно вставляем картинку на сайт для Retina дисплея</h1>
+              </a>
+              <button
+                onclick="document.location='articles/article.html'"
+                class="button hero-left__button"
+              >
+                <span class="button__text">Читать далее</span>
+                <svg class="button__arrow">
+                  <use xlink:href="img/icons.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- /.hero-left -->
+          <div id="art4" class="hero-left hero-left--image4">
+            <div class="author hero-left__author">
+              <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
+              <div class="author__info">
+                <h3 class="author__name">Давид Гуров</h3>
+                <span class="author__job">Разработчик</span>
+              </div>
+            </div>
+            <div class="main hero-left__title">
+              <h4 class="subtitle main__subtitle">Web design</h4>
+              <a href="#" class="main__link">
+                <h1 class="main__title">ТОП-10 плагинов для Figma</h1>
+              </a>
+              <button
+                onclick="document.location='articles/article.html'"
+                class="button hero-left__button"
+              >
+                <span class="button__text">Читать далее</span>
+                <svg class="button__arrow">
+                  <use xlink:href="img/icons.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- /.hero-left -->
+          <div id="art5" class="hero-left hero-left--image5">
+            <div class="author hero-left__author">
+              <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
+              <div class="author__info">
+                <h3 class="author__name">Давид Гуров</h3>
+                <span class="author__job">Разработчик</span>
+              </div>
+            </div>
+            <div class="main hero-left__title">
+              <h4 class="subtitle main__subtitle">CSS</h4>
+              <a href="#" class="main__link">
+                <h1 class="main__title">
+                  Возможности CSS Grid Layout , которые уже можно применять
+                </h1>
+              </a>
+              <button
+                onclick="document.location='articles/article.html'"
+                class="button hero-left__button"
+              >
+                <span class="button__text">Читать далее</span>
+                <svg class="button__arrow">
+                  <use xlink:href="img/icons.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- /.hero-left -->
           <div class="hero-right">
             <h2 class="hero-right__title">Рекомендуем</h2>
-            <div class="card hero-right__card">
+            <div data-target="#art1" class="card hero-right__card hero-right__card--active">
               <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent1">css</h4>
               <a href="#" class="hero-right__link">
                 <h3 class="hero-right__text">
@@ -70,7 +172,7 @@
                 </h3>
               </a>
             </div>
-            <div class="card hero-right__card">
+            <div data-target="#art2" class="card hero-right__card">
               <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent2">
                 javascript
               </h4>
@@ -80,7 +182,7 @@
                 </h3>
               </a>
             </div>
-            <div class="card hero-right__card">
+            <div data-target="#art3" class="card hero-right__card">
               <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent3">html</h4>
               <a href="#" class="hero-right__link">
                 <h3 class="hero-right__text">
@@ -88,7 +190,7 @@
                 </h3>
               </a>
             </div>
-            <div class="card hero-right__card">
+            <div data-target="#art4" class="card hero-right__card">
               <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent4">
                 Web design
               </h4>
@@ -96,7 +198,7 @@
                 <h3 class="hero-right__text">ТОП-10 плагинов для Figma</h3>
               </a>
             </div>
-            <div class="card hero-right__card">
+            <div data-target="#art5" class="card hero-right__card">
               <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent5">CSS</h4>
               <a href="#" class="hero-right__link">
                 <h3 class="hero-right__text">
@@ -139,7 +241,7 @@
     </div>
     <!-- /.addread -->
 
-    <div class="contsection">
+    <div id="articles" class="contsection">
       <div class="container">
         <div class="articles">
           <div class="article article--block1 post-xlarge">
@@ -330,21 +432,21 @@
             <div class="social post-regular3__social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="https://ru-ru.facebook.com/" class="social__link">
+                  <a href="https://ru-ru.facebook.com/" target="_blank" class="social__link">
                     <svg class="social__logo social__logo-facebook">
                       <use xlink:href="img/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="https://twitter.com/?lang=ru" class="social__link">
+                  <a href="https://twitter.com/?lang=ru" target="_blank" class="social__link">
                     <svg class="social__logo social__logo-twitter">
                       <use xlink:href="img/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="https://www.youtube.com/" class="social__link">
+                  <a href="https://www.youtube.com/" target="_blank" class="social__link">
                     <svg class="social__logo social__logo-youtube">
                       <use xlink:href="img/icons.svg#youtube"></use>
                     </svg>
@@ -389,7 +491,7 @@
       <!-- /.investigation-parallax -->
     </section>
     <!-- /.investigation -->
-    <section class="blog-section">
+    <section id="blog" class="blog-section">
       <div class="container">
         <div class="blog">
           <div class="blog-left">
@@ -409,7 +511,7 @@
                   >
                     Новости
                   </h4>
-                  <svg class="bookmark bcard-description__bookmark">
+                  <svg id="bookmark" class="bookmark bcard-description__bookmark">
                     <use xlink:href="img/icons.svg#bookmark"></use>
                   </svg>
                 </div>
@@ -459,7 +561,7 @@
                   >
                     Мнения
                   </h4>
-                  <svg class="bookmark bcard-description__bookmark">
+                  <svg id="bookmark" class="bookmark bcard-description__bookmark">
                     <use xlink:href="img/icons.svg#bookmark"></use>
                   </svg>
                 </div>
@@ -509,7 +611,7 @@
                   >
                     Горячее
                   </h4>
-                  <svg class="bookmark bcard-description__bookmark">
+                  <svg id="bookmark" class="bookmark bcard-description__bookmark">
                     <use xlink:href="img/icons.svg#bookmark"></use>
                   </svg>
                 </div>
@@ -558,7 +660,7 @@
                   >
                     Мнения
                   </h4>
-                  <svg class="bookmark bcard-description__bookmark">
+                  <svg id="bookmark" class="bookmark bcard-description__bookmark">
                     <use xlink:href="img/icons.svg#bookmark"></use>
                   </svg>
                 </div>
@@ -608,7 +710,7 @@
                   >
                     Горячее
                   </h4>
-                  <svg class="bookmark bcard-description__bookmark">
+                  <svg id="bookmark" class="bookmark bcard-description__bookmark">
                     <use xlink:href="img/icons.svg#bookmark"></use>
                   </svg>
                 </div>
@@ -656,7 +758,7 @@
                   >
                     Подборки
                   </h4>
-                  <svg class="bookmark bcard-description__bookmark">
+                  <svg id="bookmark" class="bookmark bcard-description__bookmark">
                     <use xlink:href="img/icons.svg#bookmark"></use>
                   </svg>
                 </div>
@@ -791,7 +893,7 @@
       <!-- /.container -->
     </section>
     <!-- /.blog-section -->
-    <div class="selection-section">
+    <div id="selection" class="selection-section">
       <div class="container">
         <div class="selection">
           <div class="selection-block1">
@@ -927,7 +1029,7 @@
       <!-- /.container -->
     </section>
     <!-- /.newsletter-section -->
-    <footer class="footer-section">
+    <footer id="footerfooter" class="footer-section">
       <div class="container">
         <div class="footer">
           <div class="footer-top">
@@ -1030,28 +1132,28 @@
             <div class="social footer-middle__social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="https://ru-ru.facebook.com/" class="social__link">
+                  <a href="https://ru-ru.facebook.com/" target="_blank" class="social__link">
                     <svg class="social__logo social__logo-facebook">
                       <use xlink:href="img/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="https://twitter.com/?lang=ru" class="social__link">
+                  <a href="https://twitter.com/?lang=ru" target="_blank" class="social__link">
                     <svg class="social__logo social__logo-twitter">
                       <use xlink:href="img/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="https://www.youtube.com/" class="social__link">
+                  <a href="https://www.youtube.com/" target="_blank" class="social__link">
                     <svg class="social__logo social__logo-youtube">
                       <use xlink:href="img/icons.svg#youtube"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="https://www.instagram.com/" class="social__link">
+                  <a href="https://www.instagram.com/" target="_blank" class="social__link">
                     <svg class="social__logo social__logo-instagram">
                       <use xlink:href="img/icons.svg#instagram"></use>
                     </svg>
@@ -1130,6 +1232,11 @@
     </div>
     <!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

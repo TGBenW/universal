@@ -76,6 +76,10 @@
     min-height: 590px
     background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg.jpg") center no-repeat $text-dark
     background-size: cover
+    &--prev
+      background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-prev.jpg") center no-repeat $text-dark
+    &--next
+      background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-next.jpg") center no-repeat $text-dark
   &-block1
   &-block2
     display: flex
@@ -94,6 +98,7 @@
       width: 30px
       height: 30px
       cursor: pointer
+      fill: $icon
   &-block4
     max-width: 750px
     &__title

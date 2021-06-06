@@ -70,6 +70,10 @@ input, textarea {
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .invalid {
   color: #FF4F52;
 }
@@ -99,6 +103,10 @@ img {
 
 button, .abutton {
   cursor: pointer;
+}
+
+use.bookmarked {
+  fill: #FF4F52;
 }
 
 .href {
@@ -170,26 +178,51 @@ button, .abutton {
 }
 
 .hero-left {
-  background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 55px 225px 100px 55px;
   min-height: 570px;
   color: #FFFFFF;
+  display: none;
+}
+
+.hero-left--image1 {
+  background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg");
+}
+
+.hero-left--image2 {
+  background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-2.jpg");
+}
+
+.hero-left--image3 {
+  background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-3.jpg");
+}
+
+.hero-left--image4 {
+  background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-4.jpg");
+}
+
+.hero-left--image5 {
+  background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-5.jpg");
+}
+
+.hero-left--active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .hero-right {
-  padding: 20px 25px 28px 25px;
+  padding: 20px 0 28px 0;
   display: grid;
   grid-template-rows: 39px repeat(5, 1fr);
 }
 
 .hero-right__title {
   margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
   font-family: "Lato Black", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -203,10 +236,17 @@ button, .abutton {
 .hero-right__card {
   padding-top: 17px;
   border-top: 1px solid #D9DADB;
+  cursor: pointer;
+}
+
+.hero-right__card--active {
+  background: #F5F5F5;
 }
 
 .hero-right__subtitle {
   margin-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .hero-right__subtitle--accent1 {
@@ -234,6 +274,8 @@ button, .abutton {
 }
 
 .hero-right__text {
+  padding-left: 25px;
+  padding-right: 25px;
   color: #4B5157;
   font-family: "Lato Regular", sans-serif;
   font-style: normal;
@@ -465,6 +507,14 @@ button, .abutton {
   background-size: cover;
 }
 
+.ahero-section--prev {
+  background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-prev.jpg") center no-repeat #262D33;
+}
+
+.ahero-section--next {
+  background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-next.jpg") center no-repeat #262D33;
+}
+
 .ahero-block2 {
   display: flex;
   flex-direction: row;
@@ -490,6 +540,7 @@ button, .abutton {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  fill: #BCBFC2;
 }
 
 .ahero-block4 {
@@ -1917,6 +1968,7 @@ button, .abutton {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  fill: #BCBFC2;
 }
 
 .recent {
@@ -2076,6 +2128,7 @@ button, .abutton {
 
 .ccard {
   padding: 50px 50px 165px 50px;
+  max-height: 85%;
 }
 
 .ccard__sticker {
@@ -2532,6 +2585,7 @@ button, .abutton {
 }
 
 .part4__form {
+  position: relative;
   padding-left: 12px;
   width: 100%;
   height: 130px;
@@ -2542,7 +2596,6 @@ button, .abutton {
   margin-top: 1px;
   width: 99%;
   height: 98%;
-  resize: none;
   border: none;
   border-radius: 5px;
 }
@@ -2553,6 +2606,16 @@ button, .abutton {
 
 .part6__send {
   padding-left: 12px;
+}
+
+.part4 > form > label {
+  position: absolute;
+  top: 120px;
+  font-size: 12px;
+}
+
+#myDIV {
+  display: none;
 }
 
 .newsletter {
@@ -2727,6 +2790,7 @@ button, .abutton {
   text-transform: uppercase;
   color: #262D33;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .footer-middle__link {
@@ -2762,7 +2826,6 @@ button, .abutton {
 
 @media (min-width: 992px) {
   .navbar__link:hover,
-  .hero-right__link:hover,
   .main__title:hover,
   .addread__title:hover,
   .footer-top__link:hover,
@@ -2786,9 +2849,17 @@ button, .abutton {
   .subscribe__button:active {
     background-color: #69a7ff;
   }
-  /** .user__avatar
-   transition: 0.5s
-   &:hover
-   transform: scale(1.2) **/
+  .social__logo-facebook,
+  .social__logo-twitter,
+  .social__logo-youtube,
+  .social__logo-instagram {
+    transition: 0.5s;
+  }
+  .social__logo-facebook:hover,
+  .social__logo-twitter:hover,
+  .social__logo-youtube:hover,
+  .social__logo-instagram:hover {
+    transform: scale(1.2);
+  }
 }
 /*# sourceMappingURL=style.css.map */
