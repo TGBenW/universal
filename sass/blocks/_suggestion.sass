@@ -1,12 +1,11 @@
 .suggestion
-  padding-top: 60px
   padding-bottom: 90px
-  background-color: #F5F5F5
   display: grid
   grid-template-columns: repeat(4, 1fr)
   grid-column-gap: 30px
   &-section
     padding-top: 45px
+    background-color: #F5F5F5
   &-card
     height: 275px
     &__image
@@ -23,3 +22,7 @@
       color: $text-dark
       margin: 0
       margin-bottom: 15px
+    &__details
+      display: flex
+      flex-direction: row
+      align-items: center
