@@ -144,19 +144,21 @@
   flex-direction: row
   align-items: center
   margin-right: 15px
+  fill: $icon
+  color: $text-dark
   &__icon
     width: 15px
     height: 15px
-    fill: $icon
     margin-right: 5px
+    fill: inherit
   &__text
     text-decoration: none
     font-family: $lato-400
     font-style: normal
     font-weight: normal
     font-size: 12px
+    color: inherit
     //line-height: 15px
-    color: $text-dark
 .dislike
   display: flex
   flex-direction: row
@@ -164,11 +166,13 @@
   &__icon
     width: 15px
     height: 15px
-    fill: $icon
+    cursor: pointer
     &-upvote
       margin-right: 5px
+      fill: $icon
     &-downvote
       margin-left: 5px
+      fill: $icon
   &__text
     text-decoration: none
     font-family: $lato-400
@@ -184,7 +188,7 @@
 .ncomment
   height: 290px
   padding: 30px 40px 35px 30px
-  background: #F5F5F5
+  background: $selected
   border-radius: 10px
   width: 100%
   display: grid

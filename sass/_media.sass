@@ -1,12 +1,13 @@
 @media (min-width: 992px)
-  .navbar__link,
-  .main__title,
+  .navbar__link,,
   .addread__title,
   .footer-top__link,
   .footer-middle__link,
   .home__link,
   .back__link,
-  .forward__link
+  .forward__link,
+  .bcard-description__link,
+  .blog-right__more
     &:hover
       text-decoration: underline
   .modbutton
@@ -27,3 +28,59 @@
     transition: 0.5s
     &:hover
       transform: scale(1.2)
+  .post-xlarge,
+  .post-large1,
+  .post-large3,
+  .post-regular2,
+  .suggestion-card,
+  .recent
+    transition: 0.5s
+    cursor: pointer
+    &:hover
+      transform: scale(1.03)
+  .hero-right__card
+    &:hover
+      background-color: $selected
+  .outer
+    transition: 0.5s
+    &:hover
+      background-color: darken(#3BBDC4, 7%)
+  .large2-bottom__item,
+  .ahero-card__bottom,
+  .aarticle__item,
+  .add-comment,
+  .commentation-more
+    &:hover
+      background-color: $selected
+      border-color: darken($line, 7%)
+  .footerbrdr--list1
+    &:hover
+      border-top: 2px solid $accent8
+  .footerbrdr--list2
+    &:hover
+      border-top: 2px solid $accent3
+  .footerbrdr--list3
+    &:hover
+      border-top: 2px solid $accent7
+  .footerbrdr--list4
+    &:hover
+      border-top: 2px solid $accent4
+  .footerbrdr--list5
+    &:hover
+      border-top: 2px solid $accent5
+  .footerbrdr--list6
+    &:hover
+      border-top: 2px solid $accent2
+  .abutton
+    &:hover
+      background-color: darken($button, 7%)
+  .reply
+    &:hover
+      fill: darken($icon, 30%)
+      color: darken($text-dark, 70%)
+  .dislike__icon-upvote
+    &:hover
+      fill: $accent5
+  .dislike__icon-downvote
+    &:hover
+      fill: $accent8

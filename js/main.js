@@ -39,7 +39,7 @@ $(document).ready(function () {
   modalOverlay.on("click", closeModal);
 
   //bookmark colorization
-  var bookmarks = document.querySelectorAll("#bookmark");
+  var bookmarks = document.querySelectorAll(".bookmark");
   bookmarks.forEach(function (entry) {
     entry.addEventListener("click", function (event) {
       event.target.classList.toggle("bookmarked");
