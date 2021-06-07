@@ -56,8 +56,6 @@ body {
   font-family: "Lato Regular", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
   color: #4B5157;
 }
 
@@ -2452,6 +2450,10 @@ use.bookmarked {
   border-top: 1px solid #D9DADB;
 }
 
+.comment-hidden {
+  display: none;
+}
+
 .comment--primary {
   padding-right: 90px;
 }
@@ -2640,10 +2642,6 @@ use.bookmarked {
   position: absolute;
   top: 120px;
   font-size: 12px;
-}
-
-#myDIV {
-  display: none;
 }
 
 .newsletter {
