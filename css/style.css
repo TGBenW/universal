@@ -2217,16 +2217,22 @@ use.bookmarked {
   text-align: center;
 }
 
-.button__images {
+.button-selection__images {
   width: 20px;
   height: 20px;
 }
 
-.button__text {
+.button-selection__text {
   margin: 0 8px;
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 
-.button__count {
+.button-selection__count {
   font-family: "Lato Regular", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2379,6 +2385,7 @@ use.bookmarked {
 }
 
 .commentation-more {
+  padding: 10px;
   margin-bottom: 30px;
   width: 100%;
   height: 50px;
@@ -2723,6 +2730,7 @@ use.bookmarked {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  padding-top: 30px;
   border-top: 5px solid;
 }
 
@@ -2844,12 +2852,6 @@ use.bookmarked {
   margin-left: 15px;
 }
 
-.footerbrdr {
-  height: 100%;
-  border-top: 2px solid transparent;
-  padding-top: 30px;
-}
-
 @media (min-width: 992px) {
   .navbar__link:hover,
   .addread__title:hover,
@@ -2922,24 +2924,6 @@ use.bookmarked {
     background-color: #F5F5F5;
     border-color: #c7c8ca;
   }
-  .footerbrdr--list1:hover {
-    border-top: 2px solid #FF4F52;
-  }
-  .footerbrdr--list2:hover {
-    border-top: 2px solid #AC8EE3;
-  }
-  .footerbrdr--list3:hover {
-    border-top: 2px solid #4592FF;
-  }
-  .footerbrdr--list4:hover {
-    border-top: 2px solid #FFA34D;
-  }
-  .footerbrdr--list5:hover {
-    border-top: 2px solid #3DC47E;
-  }
-  .footerbrdr--list6:hover {
-    border-top: 2px solid #6E99AE;
-  }
   .abutton:hover {
     background-color: #217dff;
   }
@@ -2952,6 +2936,30 @@ use.bookmarked {
   }
   .dislike__icon-downvote:hover {
     fill: #FF4F52;
+  }
+  .footer-top__list--list1:hover {
+    border-top: 7px solid #FF4F52;
+    padding-top: 28px;
+  }
+  .footer-top__list--list2:hover {
+    border-top: 7px solid #AC8EE3;
+    padding-top: 28px;
+  }
+  .footer-top__list--list3:hover {
+    border-top: 7px solid #4592FF;
+    padding-top: 28px;
+  }
+  .footer-top__list--list4:hover {
+    border-top: 7px solid #FFA34D;
+    padding-top: 28px;
+  }
+  .footer-top__list--list5:hover {
+    border-top: 7px solid #3DC47E;
+    padding-top: 28px;
+  }
+  .footer-top__list--list6:hover {
+    border-top: 7px solid #6E99AE;
+    padding-top: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */
