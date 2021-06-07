@@ -16,10 +16,14 @@ $email = array_key_exists('email', $_POST) ? $_POST['email'] : null;
 //$email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новый комментарий UNV-Universal";
+$title = "Новая заявка UNV-Universal";
 $body = "
-<h2>Новый комментарий:</h2>
-$comment";
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br>
+<b>Почта:</b> $email<br>
+<b>Сообщение:</b><br>$message
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();

@@ -614,6 +614,7 @@ use.bookmarked {
 .home__icon {
   width: 20px;
   height: 20px;
+  fill: #FFFFFF;
   margin-right: 5px;
 }
 
@@ -1458,7 +1459,7 @@ use.bookmarked {
 
 .regular1-top {
   padding: 25px 25px 0 25px;
-  background-image: url("../../img/file.svg");
+  background-image: url("../img/file.svg");
   background-repeat: no-repeat;
   background-position: right 22px top 24px;
 }
@@ -2334,6 +2335,43 @@ use.bookmarked {
   align-items: center;
 }
 
+.thanks-section {
+  background-color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.thanks-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+}
+
+.thanks-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.thanks-link__logo {
+  width: 40px;
+  height: 40px;
+  fill: #BCBFC2;
+  margin-right: 10px;
+}
+
+.thanks-link__logo--rotate {
+  transform: rotate(180deg);
+}
+
+.thanks-link__text {
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
 .commentation {
   max-width: 845px;
   padding-left: 97px;
@@ -2383,7 +2421,8 @@ use.bookmarked {
 }
 
 .commentation-more {
-  padding: 10px;
+  cursor: pointer;
+  padding: 13px;
   margin-bottom: 30px;
   width: 100%;
   height: 50px;
@@ -2448,10 +2487,6 @@ use.bookmarked {
   grid-template-columns: 75px 570px;
   grid-column-gap: 15px;
   border-top: 1px solid #D9DADB;
-}
-
-.comment-hidden {
-  display: none;
 }
 
 .comment--primary {
@@ -2859,7 +2894,8 @@ use.bookmarked {
   .back__link:hover,
   .forward__link:hover,
   .bcard-description__link:hover,
-  .blog-right__more:hover {
+  .blog-right__more:hover,
+  .thanks-link:hover {
     text-decoration: underline;
   }
   .modbutton:hover {

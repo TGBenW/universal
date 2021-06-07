@@ -1,0 +1,27 @@
+.thanks
+  &-section
+    background-color: #FFFFFF
+    padding-top: 20px
+    padding-bottom: 20px
+  &-title
+  &-link
+    text-decoration: none
+    display: flex
+    align-items: center
+    border: 1px solid transparent
+    &:not(:last-child)
+      margin-bottom: 10px
+    &__logo
+      width: 40px
+      height: 40px
+      fill: $icon
+      margin-right: 10px
+      &--rotate
+        transform: rotate(180deg)
+    &__text
+      font-family: $lato-400
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-primary
