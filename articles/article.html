@@ -596,9 +596,13 @@
           </div>
           <!-- /.comment comments-content -->
           <!-- hidden comments -->
-          <div id="myDIV" class="commentation-block__hidden">
+          <div id="myDIV" class="comment-hidden">
             <div class="comment comment--primary commentation-block">
-              <img src="../img/kris-jakov.png" alt="photo: Крис Яков" class="avatar comment-image" />
+              <img
+                src="../img/kris-jakov.png"
+                alt="photo: Крис Яков"
+                class="avatar comment-image"
+              />
               <div class="comment-content">
                 <div class="comment-content__top">
                   <h5 class="comment-content__top-author">Name Surname</h5>
@@ -631,7 +635,11 @@
             </div>
             <!-- /.comment comments-content -->
             <div class="comment comment--reply commentation-block">
-              <img src="../img/kris-jakov.png" alt="photo: Крис Яков" class="avatar comment-image" />
+              <img
+                src="../img/kris-jakov.png"
+                alt="photo: Крис Яков"
+                class="avatar comment-image"
+              />
               <div class="comment-content">
                 <div class="comment-content__top">
                   <h5 class="comment-content__top-author">Name Surname</h5>
@@ -664,7 +672,11 @@
             </div>
             <!-- /.comment comments-content -->
             <div class="comment comment--primary commentation-block">
-              <img src="../img/kris-jakov.png" alt="photo: Крис Яков" class="avatar comment-image" />
+              <img
+                src="../img/kris-jakov.png"
+                alt="photo: Крис Яков"
+                class="avatar comment-image"
+              />
               <div class="comment-content">
                 <div class="comment-content__top">
                   <h5 class="comment-content__top-author">Name Surname</h5>
@@ -717,36 +729,34 @@
             <div class="part4 ncomment__part4">
               <form action="send-comment.php" method="POST" class="part4__form form">
                 <textarea
-                class="comment part4__comment"
-                placeholder=""
-                minlength="100"
-                name="comment"
+                  class="comment part4__comment"
+                  placeholder=""
+                  minlength="100"
+                  name="comment"
                 ></textarea>
-              </div>
-              
-              <div class="part5 ncomment__part5"></div>
-              
-              <div class="part6 ncomment__part6">
-                <div class="part6__send">
+
+                <div class="part4__send">
                   <button
-                  onclick="document.location='articles/article.html'"
-                  class="button part6__button"
+                    onclick="document.location='articles/article.html'"
+                    class="button part4__button"
                   >
-                  <span class="button__text">Отправить</span>
-                  <svg class="button__arrow">
-                    <use xlink:href="../img/icons.svg#arrow"></use>
-                  </svg>
-                  <!-- /.part6__send -->
-                </form>
-              </div>
+                    <span class="button__text">Отправить</span>
+                    <svg class="button__arrow">
+                      <use xlink:href="../img/icons.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <!-- /.part4__send -->
+              </form>
             </div>
-            
+            <!-- /.part4 ncomment__part4 -->
           </div>
-          <!-- /.commentation -->
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.comments-section -->
+        <!-- /.commentation -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.comments-section -->
     <section class="newsletter-section">
       <div class="container">
         <div class="newsletter">
@@ -775,7 +785,7 @@
       <!-- /.container -->
     </section>
     <!-- /.newsletter-section -->
-    <footer id="footerfooter" class="footer-section">
+    <footer class="footer-section">
       <div class="container">
         <div class="footer">
           <div class="footer-top">
