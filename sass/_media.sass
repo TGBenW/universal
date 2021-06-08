@@ -367,3 +367,149 @@
       &__text
         flex-basis: 100%
         margin-bottom: 15px
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 92%
+  .header
+    max-height: 580px
+    &-bottom
+      display: none
+  .ac-container
+    display: block
+  .achero
+    display: none
+    &-right
+      &__card
+        padding-top: 10px
+        padding-bottom: 10px
+        background: #ffffff
+        border-top: none
+        &--active
+          background: #ffffff
+          padding-top: 10px
+          padding-bottom: 10px
+  .achero
+    &-left
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      //padding: 55px 225px 100px 55px
+      padding: 20px
+      //max-height: 100%
+      height: 270px
+      color: $text-light
+      //display: none
+      &--image1
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg")
+      &--image2
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-2.jpg")
+      &--image3
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-3.jpg")
+      &--image4
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-4.jpg")
+      &--image5
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-5.jpg")
+      &__author
+        margin-bottom: 10px
+    &-right
+      //padding: 20px 25px 28px 25px
+      padding: 20px 0 0 0
+      display: grid
+      grid-template-rows: 39px repeat(5, 1fr)
+      &__title
+        margin: 0
+        padding-left: 25px
+        padding-right: 25px
+        font-family: $lato-900
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $text-dark
+      &__card
+        padding-top: 17px
+        border-top: 1px solid #D9DADB
+        cursor: pointer
+      &__subtitle
+        margin-bottom: 8px
+        padding-left: 25px
+        padding-right: 25px
+        &--accent1
+          color: $accent1
+        &--accent2
+          color: $accent2
+        &--accent3
+          color: $accent3
+        &--accent4
+          color: $accent4
+        &--accent5
+          color: $accent5
+      &__link
+        text-decoration: none
+      &__text
+        padding-left: 25px
+        padding-right: 25px
+        color: $text-primary
+        font-family: $lato-400
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        margin: 0
+  .author
+    display: flex
+    flex-direction: row
+    align-items: center
+    &__avatar
+      width: 45px
+      height: 45px
+    &__info
+      margin-left: 10px
+    &__name
+      margin: 0
+      font-size: 14px
+      opacity: 0.85
+    &__job
+      font-size: 12px
+      line-height: 15px
+      opacity: 0.4
+  .main
+    &__subtitle
+      color: #4592FF
+      margin: 0
+      margin-bottom: 20px
+    &__link
+      text-decoration: none
+    &__title
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 35px
+      color: $text-light
+      min-height: 70px
+      overflow: auto
+      margin: 0
+      margin-bottom: 20px
+  .button
+    padding: 10px 20px
+    border-radius: 20px
+    background-color: $button
+    border: none
+    display: flex
+    align-items: center
+    &__text
+      font-family: $lato-900
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $text-light
+      margin-right: 5px
+    &__arrow
+      fill: $text-light
+      width: 20px
+      height: 20px
