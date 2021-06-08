@@ -46,6 +46,18 @@ $(document).ready(function () {
     });
   });
 
+  //burger menu
+  var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    $(".navbar-menu").toggleClass("navbar-menu--visible");
+    $("#body").toggleClass("oh");
+  });
+  var burgerClose = $(".mobmenubtn");
+  burgerClose.on("click", function () {
+    $(".navbar-menu").removeClass("navbar-menu--visible");
+    $("#body").removeClass("oh");
+  });
+
   //comment spoiler
   /* var commentButton = document.querySelector(".commentation-more");
   var comment = document.querySelectorAll(".commentation-block"); */

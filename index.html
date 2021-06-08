@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="#body">
     <header class="header">
       <div class="container">
         <div class="header-top">
@@ -33,26 +33,63 @@
             <li class="navbar__item"><a href="#footer" class="navbar__link">Web Design</a></li>
           </ul>
           <!-- /.navbar header-top__navbar -->
-          <button data-toggle="modal" class="modbutton header-top__button">оставить заявку</button>
-          <!-- /.button header-top__button -->
+          <div class="menu header-top__buttons">
+            <button data-toggle="modal" class="modbutton header-top__button">
+              оставить заявку
+            </button>
+            <!-- /.button header-top__button -->
+            <button
+              class="menu-button header-top__menu-button"
+              aria-label="Navigation menu burger button"
+            >
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+          <!-- /.header-top__buttons -->
+
+          <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--first">
+              <a href="#articles" class="navbar-menu__link mobmenubtn">Статьи</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#blog" class="navbar-menu__link mobmenubtn">Новости</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#selection" class="navbar-menu__link mobmenubtn">Горячее</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">HTML</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">CSS</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">JavaScript</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">Web Design</a>
+            </li>
+          </ul>
         </div>
         <!-- /.header-top -->
 
         <section class="ac-container">
-          <div>
+          <div class="achero">
             <input id="ac-1" name="accordion-1" type="radio" checked />
-            <label for="ac-1">
-              <div data-target="#art1" class="card achero-right__card">
-                <h4 class="subtitle achero-right__subtitle achero-right__subtitle--accent1">css</h4>
-                <a href="#" class="hero-right__link">
-                  <h3 class="hero-right__text">
+            <label for="ac-1" class="achero-label">
+              <div data-target="#art1" class="card achero-label__card">
+                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent1">css</h4>
+                <a href="#" class="achero-label__link">
+                  <h3 class="achero-label__text">
                     Как использовать CSS float после того, как вышел Flexbox
                   </h3>
                 </a>
               </div>
             </label>
             <article>
-              <div id="art1" class="achero-left achero-left--image1">
+              <div class="achero-left achero-left--image1">
                 <div class="author achero-left__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
@@ -79,22 +116,22 @@
             </article>
           </div>
           <!-- /.accordion-tab -->
-          <div>
+          <div class="achero">
             <input id="ac-2" name="accordion-1" type="radio" checked />
-            <label for="ac-2">
-              <div data-target="#art1" class="card achero-right__card">
-                <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent2">
+            <label for="ac-2" class="achero-label">
+              <div data-target="#art1" class="card achero-label__card">
+                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent2">
                   javascript
                 </h4>
-                <a href="#" class="hero-right__link">
-                  <h3 class="hero-right__text">
+                <a href="#" class="achero-label__link">
+                  <h3 class="achero-label__text">
                     На каком стандарте писать скрипты, если я фрилансер
                   </h3>
                 </a>
               </div>
             </label>
             <article>
-              <div id="art1" class="achero-left achero-left--image2">
+              <div class="achero-left achero-left--image2">
                 <div class="author achero-left__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
@@ -121,20 +158,22 @@
             </article>
           </div>
           <!-- /.accordion-tab -->
-          <div>
+          <div class="achero">
             <input id="ac-3" name="accordion-1" type="radio" checked />
-            <label for="ac-3">
-              <div data-target="#art1" class="card achero-right__card">
-                <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent3">html</h4>
-                <a href="#" class="hero-right__link">
-                  <h3 class="hero-right__text">
+            <label for="ac-3" class="achero-label">
+              <div data-target="#art1" class="card achero-label__card">
+                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent3">
+                  html
+                </h4>
+                <a href="#" class="achero-label__link">
+                  <h3 class="achero-label__text">
                     Правильно вставляем картинку на сайт для Retina дисплея
                   </h3>
                 </a>
               </div>
             </label>
             <article>
-              <div id="art1" class="achero-left achero-left--image3">
+              <div class="achero-left achero-left--image3">
                 <div class="author achero-left__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
@@ -163,20 +202,20 @@
             </article>
           </div>
           <!-- /.accordion-tab -->
-          <div>
+          <div class="achero">
             <input id="ac-4" name="accordion-1" type="radio" checked />
-            <label for="ac-4">
-              <div data-target="#art1" class="card achero-right__card">
-                <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent4">
+            <label for="ac-4" class="achero-label">
+              <div data-target="#art1" class="card achero-label__card">
+                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent4">
                   Web design
                 </h4>
-                <a href="#" class="hero-right__link">
-                  <h3 class="hero-right__text">ТОП-10 плагинов для Figma</h3>
+                <a href="#" class="achero-label__link">
+                  <h3 class="achero-label__text">ТОП-10 плагинов для Figma</h3>
                 </a>
               </div>
             </label>
             <article>
-              <div id="art1" class="achero-left achero-left--image4">
+              <div class="achero-left achero-left--image4">
                 <div class="author achero-left__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
@@ -203,20 +242,20 @@
             </article>
           </div>
           <!-- /.accordion-tab -->
-          <div>
+          <div class="achero">
             <input id="ac-5" name="accordion-1" type="radio" checked />
-            <label for="ac-5">
-              <div data-target="#art1" class="card achero-right__card">
-                <h4 class="subtitle hero-right__subtitle hero-right__subtitle--accent5">CSS</h4>
-                <a href="#" class="hero-right__link">
-                  <h3 class="hero-right__text">
+            <label for="ac-5" class="achero-label">
+              <div data-target="#art1" class="card achero-label__card">
+                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent5">CSS</h4>
+                <a href="#" class="achero-label__link">
+                  <h3 class="achero-label__text">
                     Возможности CSS Grid Layout , которые уже можно применять
                   </h3>
                 </a>
               </div>
             </label>
             <article>
-              <div id="art1" class="achero-left achero-left--image5">
+              <div class="achero-left achero-left--image5">
                 <div class="author achero-left__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
@@ -437,7 +476,7 @@
             <img src="img/addread1.png" alt="" class="addread__image" />
           </a>
           <a href="" class="addread__link">
-            <h3 class="addread__title">Главные фишки фрилансера</h3>
+            <h3 class="addread__title addread__title--even">Главные фишки фрилансера</h3>
             <img src="img/addread2.png" alt="" class="addread__image" />
           </a>
           <a href="" class="addread__link">
@@ -445,7 +484,9 @@
             <img src="img/addread3.png" alt="" class="addread__image" />
           </a>
           <a href="" class="addread__link">
-            <h3 class="addread__title">Что нужно знать о Git и&nbsp;GitHub</h3>
+            <h3 class="addread__title addread__title--even">
+              Что нужно знать о&nbsp;Git&nbsp;и&nbsp;GitHub
+            </h3>
             <img src="img/addread4.png" alt="" class="addread__image" />
           </a>
         </div>
@@ -500,7 +541,7 @@
           <div class="article article--block2 post-large1">
             <span class="post-large1__sticker">Популярное</span>
             <h4 class="subtitle post-large1__subtitle">Web design</h4>
-            <h2 class="post-large1__title">Где взять реальные проекты для портфолио</h2>
+            <h2 class="post-large1__title">Где взять реальные проекты для&nbsp;портфолио</h2>
             <div class="author post-large1__author">
               <img
                 src="img/sara-zhennikova.png"
@@ -1227,17 +1268,6 @@
             </div>
           </div>
           <!-- /.selection-block4 -->
-          <div class="selection-block5 selection-block5--responsive">
-            <div class="article article--block6 post-regular2 post-regular2--special">
-              <h2 class="post-regular2__title">Новинки WWDC 2021</h2>
-              <p class="post-regular2__text">
-                Конференция Apple WWDC 2021. Компания презентовала iOS 15, iPadOS 15 и другие
-                новинки.
-              </p>
-              <span class="post-regular2__date">14 октября</span>
-            </div>
-          </div>
-          <!-- /.selection-block4 -->
         </div>
         <!-- /.selection -->
       </div>
@@ -1264,7 +1294,7 @@
       <!-- /.container -->
     </section>
     <!-- /.newsletter-section -->
-    <footer class="footer-section">
+    <footer id="footer" class="footer-section">
       <div class="container">
         <div class="footer">
           <div class="footer-top">

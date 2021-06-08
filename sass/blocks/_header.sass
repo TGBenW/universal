@@ -8,6 +8,10 @@
     flex-direction: row
     align-items: center
     justify-content: space-between
+    &__logo
+      display: flex
+      flex-direction: row
+      align-items: center
   &-bottom
     margin-top: 30px
 .logo
@@ -29,6 +33,8 @@
   display: flex
   flex-direction: row
   justify-content: space-between
+  &-menu
+    display: none
   &__item
     font-family: $lato-900
     font-weight: 900
@@ -44,6 +50,9 @@
   line-height: 20px
   text-transform: uppercase
   border-radius: 10px
+.menu
+  &-button
+    display: none
 .hero
   display: grid
   grid-template-columns: 877px 263px
