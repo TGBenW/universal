@@ -65,7 +65,7 @@
     display: grid
     grid-template-rows: 124px 1px 45px
     background-color: #3BBDC4
-    max-height: 170px
+    max-height: 195px
   &-large2
     display: grid
     grid-template-rows: 59px 1px 310px
@@ -74,10 +74,12 @@
     grid-template-rows: 275px 95px
   &-regular2
     padding: 25px 25px 30px 25px
-    max-height: 170px
+    //max-height: 170px
+    max-height: 195px
     &__title
       margin: 0
       margin-bottom: 5px
+      min-height: 50px
       font-family: "Roboto Slab", serif
       font-style: normal
       font-weight: bold
@@ -103,7 +105,7 @@
       color: $text-secondary
   &-regular3
     padding: 30px 36px 40px 36px
-    max-height: 170px
+    max-height: 195px
     &__title
       margin: 0
       margin-bottom: 25px
@@ -209,6 +211,7 @@
     flex-wrap: nowrap
     &__avatar
       width: 30px
+      margin-right: 10px
     &__content
       display: flex
       flex-direction: row
@@ -216,6 +219,10 @@
       align-items: center
       //margin-left: 10px
       //margin-right: 15px
+      &-inner
+        display: flex
+        flex-direction: row
+        align-items: center
     &__author
       margin: 0
       margin-right: 5px
