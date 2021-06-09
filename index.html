@@ -92,36 +92,38 @@
         </div>
         <!-- /.header-top -->
 
-        <section class="ac-container">
-          <div class="achero">
-            <input id="ac-1" name="accordion-1" type="radio" checked />
-            <label for="ac-1" class="achero-label">
-              <div data-target="#art1" class="card achero-label__card">
-                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent1">css</h4>
-                <a href="#" class="achero-label__link">
-                  <h3 class="achero-label__text">
+        <!-- /.AC -->
+        <div class="accordion js-accordion">
+          <div class="accordion__item js-accordion-item">
+            <div class="accordion-header js-accordion-header">
+              <div data-target="#art1" class="card accordion-header__card">
+                <h4 class="subtitle accordion-header__subtitle accordion-header__subtitle--accent2">
+                  css
+                </h4>
+                <a href="#" class="accordion-header__link">
+                  <h3 class="accordion-header__text">
                     Как использовать CSS float после того, как вышел Flexbox
                   </h3>
                 </a>
               </div>
-            </label>
-            <article>
-              <div class="achero-left achero-left--image1">
-                <div class="author achero-left__author">
+            </div>
+            <div class="accordion-body accordion-body--image1 js-accordion-body">
+              <div class="accordion-body__contents acbody-contents">
+                <div class="author acbody-contents__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
                     <h3 class="author__name">Давид Гуров</h3>
                     <span class="author__job">Разработчик</span>
                   </div>
                 </div>
-                <div class="main achero-left__title">
+                <div class="main acbody-contents__title">
                   <h4 class="subtitle main__subtitle">Javascript</h4>
                   <a href="#" class="main__link">
                     <h1 class="main__title">Расширение Chrome защищает от атак</h1>
                   </a>
                   <button
                     onclick="document.location='articles/article.html'"
-                    class="button achero-left__button"
+                    class="button acbody-contents__button"
                   >
                     <span class="button__text">Читать далее</span>
                     <svg class="button__arrow">
@@ -130,40 +132,44 @@
                   </button>
                 </div>
               </div>
-            </article>
+              <div class="accordion js-accordion"></div>
+              <!-- end of sub accordion -->
+            </div>
           </div>
-          <!-- /.accordion-tab -->
-          <div class="achero">
-            <input id="ac-2" name="accordion-1" type="radio" checked />
-            <label for="ac-2" class="achero-label">
-              <div data-target="#art1" class="card achero-label__card">
-                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent2">
+          <!-- end of accordion body -->
+          <div class="accordion__item js-accordion-item">
+            <div class="accordion-header js-accordion-header">
+              <div data-target="#art1" class="card accordion-header__card">
+                <h4 class="subtitle accordion-header__subtitle accordion-header__subtitle--accent2">
                   javascript
                 </h4>
-                <a href="#" class="achero-label__link">
-                  <h3 class="achero-label__text">
+                <a href="#" class="accordion-header__link">
+                  <h3 class="accordion-header__text">
                     На каком стандарте писать скрипты, если я фрилансер
                   </h3>
                 </a>
               </div>
-            </label>
-            <article>
-              <div class="achero-left achero-left--image2">
-                <div class="author achero-left__author">
+            </div>
+            <div
+              class="accordion-body accordion-body--image2 js-accordion-body"
+              style="display: none"
+            >
+              <div class="accordion-body__contents acbody-contents">
+                <div class="author acbody-contents__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
                     <h3 class="author__name">Давид Гуров</h3>
                     <span class="author__job">Разработчик</span>
                   </div>
                 </div>
-                <div class="main achero-left__title">
+                <div class="main acbody-contents__title">
                   <h4 class="subtitle main__subtitle">Javascript</h4>
                   <a href="#" class="main__link">
                     <h1 class="main__title">На каком стандарте писать скрипты, если я фрилансер</h1>
                   </a>
                   <button
                     onclick="document.location='articles/article.html'"
-                    class="button achero-left__button"
+                    class="button acbody-contents__button"
                   >
                     <span class="button__text">Читать далее</span>
                     <svg class="button__arrow">
@@ -172,33 +178,37 @@
                   </button>
                 </div>
               </div>
-            </article>
+              <div class="accordion js-accordion"></div>
+              <!-- end of sub accordion -->
+            </div>
           </div>
-          <!-- /.accordion-tab -->
-          <div class="achero">
-            <input id="ac-3" name="accordion-1" type="radio" checked />
-            <label for="ac-3" class="achero-label">
-              <div data-target="#art1" class="card achero-label__card">
-                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent3">
+          <!-- end of accordion body -->
+          <div class="accordion__item js-accordion-item">
+            <div class="accordion-header js-accordion-header">
+              <div data-target="#art1" class="card accordion-header__card">
+                <h4 class="subtitle accordion-header__subtitle accordion-header__subtitle--accent3">
                   html
                 </h4>
-                <a href="#" class="achero-label__link">
-                  <h3 class="achero-label__text">
+                <a href="#" class="accordion-header__link">
+                  <h3 class="accordion-header__text">
                     Правильно вставляем картинку на сайт для Retina дисплея
                   </h3>
                 </a>
               </div>
-            </label>
-            <article>
-              <div class="achero-left achero-left--image3">
-                <div class="author achero-left__author">
+            </div>
+            <div
+              class="accordion-body accordion-body--image3 js-accordion-body"
+              style="display: none"
+            >
+              <div class="accordion-body__contents acbody-contents">
+                <div class="author acbody-contents__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
                     <h3 class="author__name">Давид Гуров</h3>
                     <span class="author__job">Разработчик</span>
                   </div>
                 </div>
-                <div class="main achero-left__title">
+                <div class="main acbody-contents__title">
                   <h4 class="subtitle main__subtitle">html</h4>
                   <a href="#" class="main__link">
                     <h1 class="main__title">
@@ -207,7 +217,7 @@
                   </a>
                   <button
                     onclick="document.location='articles/article.html'"
-                    class="button achero-left__button"
+                    class="button acbody-contents__button"
                   >
                     <span class="button__text">Читать далее</span>
                     <svg class="button__arrow">
@@ -216,38 +226,42 @@
                   </button>
                 </div>
               </div>
-            </article>
+              <div class="accordion js-accordion"></div>
+              <!-- end of sub accordion -->
+            </div>
           </div>
-          <!-- /.accordion-tab -->
-          <div class="achero">
-            <input id="ac-4" name="accordion-1" type="radio" checked />
-            <label for="ac-4" class="achero-label">
-              <div data-target="#art1" class="card achero-label__card">
-                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent4">
+          <!-- end of accordion body -->
+          <div class="accordion__item js-accordion-item">
+            <div class="accordion-header js-accordion-header">
+              <div data-target="#art1" class="card accordion-header__card">
+                <h4 class="subtitle accordion-header__subtitle accordion-header__subtitle--accent1">
                   Web design
                 </h4>
-                <a href="#" class="achero-label__link">
-                  <h3 class="achero-label__text">ТОП-10 плагинов для Figma</h3>
+                <a href="#" class="accordion-header__link">
+                  <h3 class="accordion-header__text">ТОП-10 плагинов для Figma</h3>
                 </a>
               </div>
-            </label>
-            <article>
-              <div class="achero-left achero-left--image4">
-                <div class="author achero-left__author">
+            </div>
+            <div
+              class="accordion-body accordion-body--image4 js-accordion-body"
+              style="display: none"
+            >
+              <div class="accordion-body__contents acbody-contents">
+                <div class="author acbody-contents__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
                     <h3 class="author__name">Давид Гуров</h3>
                     <span class="author__job">Разработчик</span>
                   </div>
                 </div>
-                <div class="main achero-left__title">
+                <div class="main acbody-contents__title">
                   <h4 class="subtitle main__subtitle">Web design</h4>
                   <a href="#" class="main__link">
-                    <h1 class="main__title">ТОП-10 плагинов для&nbsp;Figma</h1>
+                    <h1 class="main__title">ТОП-10 плагинов для Figma</h1>
                   </a>
                   <button
                     onclick="document.location='articles/article.html'"
-                    class="button achero-left__button"
+                    class="button acbody-contents__button"
                   >
                     <span class="button__text">Читать далее</span>
                     <svg class="button__arrow">
@@ -256,40 +270,49 @@
                   </button>
                 </div>
               </div>
-            </article>
+              <div class="accordion js-accordion"></div>
+              <!-- end of sub accordion -->
+            </div>
           </div>
-          <!-- /.accordion-tab -->
-          <div class="achero">
-            <input id="ac-5" name="accordion-1" type="radio" checked />
-            <label for="ac-5" class="achero-label">
-              <div data-target="#art1" class="card achero-label__card">
-                <h4 class="subtitle achero-label__subtitle achero-label__subtitle--accent5">CSS</h4>
-                <a href="#" class="achero-label__link">
-                  <h3 class="achero-label__text">
+          <!-- end of accordion body -->
+          <div class="accordion__item js-accordion-item">
+            <div class="accordion-header js-accordion-header">
+              <div
+                data-target="#art1"
+                class="card accordion-header__card accordion-header__card--last"
+              >
+                <h4 class="subtitle accordion-header__subtitle accordion-header__subtitle--accent1">
+                  css
+                </h4>
+                <a href="#" class="accordion-header__link">
+                  <h3 class="accordion-header__text">
                     Возможности CSS Grid Layout , которые уже можно применять
                   </h3>
                 </a>
               </div>
-            </label>
-            <article>
-              <div class="achero-left achero-left--image5">
-                <div class="author achero-left__author">
+            </div>
+            <div
+              class="accordion-body accordion-body--image5 js-accordion-body"
+              style="display: none"
+            >
+              <div class="accordion-body__contents acbody-contents">
+                <div class="author acbody-contents__author">
                   <img src="img/david-gurov.png" alt="Давид Гуров" class="avatar author__avatar" />
                   <div class="author__info">
                     <h3 class="author__name">Давид Гуров</h3>
                     <span class="author__job">Разработчик</span>
                   </div>
                 </div>
-                <div class="main achero-left__title">
+                <div class="main acbody-contents__title">
                   <h4 class="subtitle main__subtitle">CSS</h4>
                   <a href="#" class="main__link">
                     <h1 class="main__title">
-                      Возможности CSS Grid Layout, которые уже можно применять
+                      Возможности CSS Grid Layout , которые уже можно применять
                     </h1>
                   </a>
                   <button
                     onclick="document.location='articles/article.html'"
-                    class="button achero-left__button"
+                    class="button acbody-contents__button"
                   >
                     <span class="button__text">Читать далее</span>
                     <svg class="button__arrow">
@@ -298,11 +321,13 @@
                   </button>
                 </div>
               </div>
-            </article>
+              <div class="accordion js-accordion"></div>
+              <!-- end of sub accordion -->
+            </div>
           </div>
-        </section>
-        <!-- /.accordion-tab -->
-
+          <!-- end of accordion body -->
+        </div>
+        <!-- end of accordion item -->
         <!-- /.accordion -->
         <div class="hero header-bottom">
           <div id="art1" class="hero-left hero-left--image1 hero-left--active">

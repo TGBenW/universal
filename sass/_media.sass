@@ -452,6 +452,8 @@
   .container
     width: 92%
     max-width: 576px
+  .addvertizer
+    margin-top: 240px
   .header
     max-height: 580px
     &-top
@@ -510,85 +512,6 @@
     &__link
       text-decoration: none
       color: $text-light
-  .ac-container
-    display: block
-  .achero
-    &-left
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center
-      //padding: 55px 225px 100px 55px
-      padding: 20px
-      //max-height: 100%
-      height: 310px
-      color: $text-light
-      //display: none
-      &--image1
-        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg")
-      &--image2
-        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-2.jpg")
-      &--image3
-        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-3.jpg")
-      &--image4
-        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-4.jpg")
-      &--image5
-        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-5.jpg")
-      &__author
-        margin-bottom: 10px
-    &-label
-      //padding: 20px 25px 28px 25px
-      padding: 20px 0 0 0
-      display: grid
-      grid-template-rows: 39px repeat(5, 1fr)
-      &__title
-        margin: 0
-        padding-left: 25px
-        padding-right: 25px
-        font-family: $lato-900
-        font-style: normal
-        font-weight: 900
-        font-size: 14px
-        line-height: 20px
-        letter-spacing: 0.5px
-        text-transform: uppercase
-        color: $text-dark
-      &__text
-        //max-width: 80%
-      &__card
-        padding-top: 10px
-        padding-bottom: 10px
-        background: #ffffff
-        border-top: none
-        &--active
-          background: #ffffff
-          padding-top: 10px
-          padding-bottom: 10px
-      &__subtitle
-        margin-bottom: 8px
-        padding-left: 25px
-        padding-right: 25px
-        &--accent1
-          color: $accent1
-        &--accent2
-          color: $accent2
-        &--accent3
-          color: $accent3
-        &--accent4
-          color: $accent4
-        &--accent5
-          color: $accent5
-      &__link
-        text-decoration: none
-      &__text
-        padding-left: 25px
-        padding-right: 25px
-        color: $text-primary
-        font-family: $lato-400
-        font-style: normal
-        font-weight: 400
-        font-size: 14px
-        line-height: 20px
-        margin: 0
   .author
     display: flex
     flex-direction: row
@@ -792,19 +715,80 @@
       &__link
         font-size: 12px
         line-height: 16px
+    /** accordion styleson appear **/
+  .accordion
+    min-height: 660px
+    &__item
+      //height: 300px
+    &-header
+      padding: 10px 25px 0 25px
+      &__card
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        border-bottom: 1px solid $line
+        &--last
+          border-bottom: none
+      &__link
+        flex-basis: 100%
+        margin-bottom: 10px
+        text-decoration: none
+      &__text
+        margin: 0
+        color: $text-primary
+        font-family: $lato-400
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        margin: 0
+        height: 40px
+        overflow: hidden
+      &__subtitle
+        font-size: 12px
+        //margin-top: 8px
+        margin-bottom: 8px
+        &--accent1
+          color: $accent1
+        &--accent2
+          color: $accent2
+        &--accent3
+          color: $accent3
+        &--accent4
+          color: $accent4
+        &--accent5
+          color: $accent5
+    &-body
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      height: 300px
+      padding: 25px
+      &--image1
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-1.jpg")
+      &--image2
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-2.jpg")
+      &--image3
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-3.jpg")
+      &--image4
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-4.jpg")
+      &--image5
+        background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/hero-image-5.jpg")
+  .author
+    margin-bottom: 20px
+    &__info
+      font-family: $lato-400
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-light
+      opacity: 0.85
 @media (max-width: 576px)
+  .addvertizer
+    margin-top: 150px
   .header
     max-height: 670px
-  .achero
-    &-left
-      &__title
-        max-width: 80%
-    &-label
-      &__text
-        max-height: 40px
-        overflow: auto
-  .ac-container label
-    padding: 0
   .author
     margin-bottom: 20px
   .main
@@ -813,8 +797,6 @@
       line-height: 22px
       height: 90px
       overflow: auto
-  .addvertizer
-    margin-top: 12vw
   .addread
     height: 380px
     border-radius: 10px
@@ -1015,7 +997,7 @@
       padding: 20px 20px
 @media (max-width: 500px)
   .addvertizer
-    margin-top: 90px
+    //margin-top: 90px
   .blog
     &-right
       &__posts
@@ -1079,7 +1061,7 @@
         margin-left: 0
 @media (max-width: 470px)
   .addvertizer
-    margin-top: 120px
+    //margin-top: 120px
   .investigation
     &-wrapper
       padding: 50px 0 55px 0
@@ -1104,8 +1086,8 @@
       &__item
   .social
     &__list
-      flex-basis: 100%
-      width: 100vw
+      //flex-basis: 100%
+      //width: 100vw
       justify-content: space-between
     &__item
       margin-top: 15px
@@ -1180,6 +1162,10 @@
     &__image
       right: -40%
 @media (max-width: 400px)
+  .accordion
+    &-header
+      &__text
+        font-size: 12px
   .recent
     &__title
       font-size: 14px
@@ -1257,6 +1243,10 @@
       top: 40px
       left: 15px
 @media (max-width: 350px)
+  .accordion
+    &-header
+      &__text
+        font-size: 11px
   .ccard2
     &__circle
       right: -40%
