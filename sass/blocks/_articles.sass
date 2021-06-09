@@ -49,7 +49,7 @@
       color: $text-light
     &__subtitle
       color: $accent6
-      margin-top: 116px
+      margin-top: 120px
       margin-bottom: 23px
     &__title
       font-family: "Roboto Slab", serif
@@ -65,7 +65,7 @@
     display: grid
     grid-template-rows: 124px 1px 45px
     background-color: #3BBDC4
-    height: 100%
+    height: 170px
   &-large2
     display: grid
     grid-template-rows: 59px 1px 310px
@@ -74,12 +74,12 @@
     grid-template-rows: 275px 95px
   &-regular2
     padding: 25px 25px 30px 25px
-    //max-height: 170px
+    max-height: 170px
     height: 100%
     &__title
       margin: 0
       margin-bottom: 5px
-      min-height: 50px
+      min-height: 25px
       font-family: "Roboto Slab", serif
       font-style: normal
       font-weight: bold
@@ -105,7 +105,7 @@
       color: $text-secondary
   &-regular3
     padding: 30px 36px 40px 36px
-    height: 100%
+    height: 170px
     &__title
       margin: 0
       margin-bottom: 25px
@@ -137,7 +137,13 @@
     height: 15px
     margin-right: 5px
     fill: $text-light
-
+  &__count
+    font-family: $lato-400
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px;color: $text-light
+    opacity: 0.4
 .author
   display: flex
   flex-direction: row
@@ -372,8 +378,9 @@
     display: flex
     flex-direction: row
     align-items: center
-    justify-content: space-between
+    //justify-content: space-between
   &__item
+    margin-left: 5px
   &__link
     cursor: default
   &__logo
