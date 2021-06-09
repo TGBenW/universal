@@ -444,6 +444,10 @@
       &__text
         flex-basis: 100%
         margin-bottom: 15px
+  .modal
+    &__dialog
+      width: 478px
+      padding: 30px 50px
 @media (max-width: 767px)
   .container
     width: 92%
@@ -491,7 +495,7 @@
     top: 60px
     right: 0
     bottom: -20px
-    left: 0
+    left: -40px
     z-index: 997
     &--visible
       display: block
@@ -916,6 +920,10 @@
     grid-template-rows: 1fr 0.5fr
     grid-row-gap: 20px
     &-description
+      &__title
+        min-height: 20px
+        max-height: 60px
+        overflow: auto
       &__text
         min-height: 70px
   .recent
@@ -956,6 +964,53 @@
       &__title
         font-size: 30px
         line-height: 40px
+  .ccard2
+    padding-right: 35px
+    &__title
+      position: relative
+      z-index: 300
+      font-size: 24px
+      line-height: 30px
+      width: 65%
+      margin-bottom: 50px
+    &__text
+      position: relative
+      z-index: 300
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 50px
+      max-height: 66px
+      overflow: auto
+      width: 65%
+    &__button
+      width: 155px
+    &__circle
+      right: -10%
+      z-index: 0
+    &__image
+      right: -25%
+  .footer
+    &-middle
+      flex-wrap: nowrap
+      align-items: center
+      justify-content: space-between
+      &__navbar
+        justify-content: flex-start
+        align-items: start
+        flex-basis: auto
+        margin-bottom: 0
+      &__list
+        flex-direction: column
+        align-items: start
+      &__item
+        margin-bottom: 10px
+    &-bottom
+      &__text
+        font-size: 12px
+  .modal
+    &__dialog
+      width: 92%
+      padding: 20px 20px
 @media (max-width: 500px)
   .addvertizer
     margin-top: 90px
@@ -988,15 +1043,71 @@
       &__title
         font-size: 30px
         line-height: 40px
+  .ccard2
+    padding-right: 0
+    &__title
+      position: relative
+      z-index: 300
+      font-size: 18px
+      line-height: 20px
+      width: 55%
+      margin-bottom: 60px
+    &__text
+      position: relative
+      z-index: 300
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 40px
+      max-height: 88px
+      width: 55%
+    &__button
+      width: 155px
+    &__circle
+      right: -20%
+    &__image
+      right: -35%
+  .social
+    &__list
+      flex-wrap: nowrap
+      justify-content: center
+    &__item
+      flex-basis: 40%
+      margin-bottom: 15px
+      &:not(:first-child)
+        margin-left: 0
 @media (max-width: 470px)
   .addvertizer
     margin-top: 120px
   .investigation
     &-wrapper
       padding: 50px 0 55px 0
+  .post
+    &-large2
+      &__bottom
+        overflow: auto
+  .footer
+    padding-bottom: 25px
+    &-top
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 1fr)
+      grid-row-gap: 20px
 @media (max-width: 442px)
   .addvertizer
     margin-top: 150px
+  .footer
+    &-middle
+      flex-wrap: wrap
+      &__navbar
+        flex-basis: 100%
+      &__item
+  .social
+    &__list
+      flex-basis: 100%
+      width: 100vw
+      justify-content: space-between
+    &__item
+      margin-top: 15px
+      margin-bottom: 0
 @media (max-width: 420px)
   .logo
     &-text
@@ -1051,7 +1162,7 @@
         padding: 2px 5px
         margin-right: 5px
   .author
-    margin-bottom: 0
+    margin-bottom: 20px
   .investigation
     &-wrapper
       &__title
@@ -1060,6 +1171,12 @@
   .recent
     &__number
       top: 30px
+  .ccard2
+    &__circle
+      right: -30%
+      z-index: 0
+    &__image
+      right: -40%
 @media (max-width: 400px)
   .recent
     &__title
@@ -1072,6 +1189,77 @@
       &__title
         font-size: 24px
         line-height: 30px
+  .post
+    &-large3
+      grid-template-rows: 360px 1fr
+      padding-bottom: 10px
+  .blog
+    &-section
+      padding-bottom: 30px
+    &-right
+      padding-bottom: 0
+  .xlarge
+    &-top
+      &__title
+        font-size: 20px
+      &__text
+        font-size: 14px
+  .large2
+    &-bottom
+      padding-top: 10px
+      padding-right: 15px
+      &__item
+        padding: 2px 5px
+        margin-bottom: 5px
+      &__list
+        font-size: 10px
+        line-height: 14px
+  .bcard
+    &-description
+      &__title
+        font-size: 14px
+      &__text
+        font-size: 12px
+  .ccard2
+    padding-right: 0
+    &__title
+      position: relative
+      z-index: 300
+      font-size: 18px
+      line-height: 20px
+      width: 150px
+      margin-bottom: 60px
+    &__text
+      position: relative
+      z-index: 300
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 40px
+      width: 150px
+      max-height: 110px
+    &__button
+      width: 155px
+    &__circle
+      right: -30%
+      z-index: 0
+    &__image
+      right: -40%
+  .subscribe
+    flex-direction: column
+    &__input
+      margin-right: 0
+      margin-bottom: 20px
+    &__button
+    &>label
+      font-size: 12px
+      top: 40px
+      left: 15px
+@media (max-width: 350px)
+  .ccard2
+    &__circle
+      right: -40%
+    &__image
+      right: -50%
 @media (max-width: 320px)
   .logo
     &-text
