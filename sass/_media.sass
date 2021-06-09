@@ -18,7 +18,7 @@
       &:nth-child(2n)
         border-right: none
       &:nth-child(-n+2)
-        border-bottom: 1px solid $line
+        border-bottom: 1px solid $text-primary
     &__title
       font-size: 18px
       line-height: 24px
@@ -59,10 +59,70 @@
   .post
     &-xlarge
       grid-template-rows: 5.7fr 1px 1fr
+    &-large1
+      position: relative
+      &__frame
+        position: absolute
+        bottom: 25px
+        left: 25px
+      &__title
+        width: 70%
+    &-large3
+      grid-template-rows: 1fr 60px
+      padding-bottom: 25px
+    &-regular1
+      grid-template-rows: 3fr 1px 1fr
     &-regular2
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
       &--special
         min-height: 195px
         padding-top: 30px
+    &-regular3
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      align-content: center
+      justify-content: center
+      &__title
+        margin-bottom: 70px
+  .xlarge
+    &-top
+      &__bg
+        height: 100%
+        top: 0
+      &__content
+        width: 50%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      &__frame
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      &__title
+        margin: 0
+        font-size: 30px
+        line-height: 36px
+      &__text
+        font-size: 18px
+        line-height: 26px
+  .large3
+    &-bottom
+      padding: 0
+      height: 100%
+      &__title
+        padding-top: 10px
+        padding-left: 25px
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        overflow: auto
   .regular1
     &-bottom
       &__download
@@ -279,7 +339,8 @@
     &-large2
       grid-template-rows: 59px 1px 1fr
     &-large3
-      grid-template-rows: 380px 25px
+      grid-template-rows: 380px 1fr
+      padding-bottom: 10px
   .xlarge
     &-top
       &__bg
@@ -429,7 +490,7 @@
     min-width: 100vw
     top: 60px
     right: 0
-    bottom: 0
+    bottom: -20px
     left: 0
     z-index: 997
     &--visible
@@ -725,7 +786,248 @@
       &__link
         font-size: 12px
         line-height: 16px
-/** @media (max-width: 767px)
- .container
- max-width: 576px
- width: 92% **/
+@media (max-width: 576px)
+  .header
+    max-height: 670px
+  .achero
+    &-left
+      &__title
+        max-width: 80%
+    &-label
+      &__text
+        max-height: 40px
+        overflow: auto
+  .ac-container label
+    padding: 0
+  .author
+    margin-bottom: 20px
+  .main
+    &__title
+      font-size: 16px
+      line-height: 22px
+      height: 90px
+      overflow: auto
+  .addvertizer
+    margin-top: 12vw
+  .addread
+    height: 380px
+    border-radius: 10px
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(4, 1fr)
+    &__link
+      text-decoration: none
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &:nth-child(-n+2)
+        border-bottom: none
+      &:not(:last-child)
+        border-right: none
+        border-bottom: 1px solid $text-primary
+        padding-bottom: 10px
+      &:not(:first-child)
+        padding-top: 10px
+    &__title
+      max-width: 70%
+      font-size: 16px
+      line-height: 20px
+      &--even
+        margin-left: 0
+    &__image
+      margin-right: 0
+  .contsection
+    margin-top: 30px
+  .articles
+    grid-template-columns: 1fr
+    grid-column-gap: 0
+    grid-template-rows: repeat(14, 200px)
+  .article
+    &--block1
+      grid-column: 1 / 2
+      grid-row: 1 / 4
+    &--block2
+      grid-column: 1 / 2
+      grid-row: 4 / 6
+    &--block3
+      grid-column: 1 / 2
+      grid-row: 6 / 7
+    &--block4
+      grid-column: 1 / 2
+      grid-row: 7 / 8
+    &--block5
+      grid-column: 1 / 2
+      grid-row: 8 / 10
+    &--block6
+      grid-column: 1 / 2
+      grid-row: 10 / 11
+    &--block7
+      grid-column: 1 / 2
+      grid-row: 11 / 12
+    &--block8
+      grid-column: 1 / 2
+      grid-row: 12 / 13
+    &--block9
+      grid-column: 1 / 2
+      grid-row: 13 / 14
+    &--block10
+      grid-column: 1 / 2
+      grid-row: 14 / 15
+  .post
+    &-regular2
+      &__text
+        width: 100%
+    &-regular3
+      flex-direction: column
+  .xlarge
+    &-top
+      &__bg
+        height: 60vw
+        z-index: 0
+      &__title
+        position: relative
+        z-index: 5
+      &__text
+        position: relative
+        z-index: 5
+    &-bottom
+      &__author
+      &__text
+        display: none
+  .large2
+    &-bottom
+      &__list
+      &__item
+        font-size: 14px
+        line-height: 20px
+        padding: 2px 15px
+        margin-right: 10px
+        margin-bottom: 10px
+      &__link
+  .symbol
+    display: none
+  .investigation
+    &-wrapper
+      padding: 50px 5% 55px 5%
+  .bcard
+    grid-template-columns: 1fr
+    grid-column-gap: 0
+    grid-template-rows: 1fr 0.5fr
+    grid-row-gap: 20px
+    &-description
+      &__text
+        min-height: 70px
+  .recent
+    &__number
+      right: 10px
+      top: 15px
+@media (max-width: 500px)
+  .addvertizer
+    margin-top: 90px
+  .blog
+    &-right
+      &__posts
+        grid-template-columns: 1fr
+        grid-column-gap: 0
+        grid-template-rows: repeat(7, 1fr)
+  .recent
+    grid-template-columns: 1fr 2fr
+    &__image
+      height: 100%
+    &__details
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__title
+      margin: 0
+      font-size: 18px
+      line-height: 24px
+      max-width: 80%
+    &__number
+      top: 45px
+@media (max-width: 470px)
+  .addvertizer
+    margin-top: 120px
+  .investigation
+    &-wrapper
+      padding: 50px 0 55px 0
+@media (max-width: 442px)
+  .addvertizer
+    margin-top: 150px
+@media (max-width: 420px)
+  .logo
+    &-text
+      display: none
+  .addread
+    height: 400px
+  .articles
+    grid-template-columns: 1fr
+    grid-column-gap: 0
+    grid-template-rows: repeat(13, 200px)
+  .article
+    &--block1
+      grid-column: 1 / 2
+      grid-row: 1 / 3
+    &--block2
+      grid-column: 1 / 2
+      grid-row: 3 / 5
+    &--block3
+      grid-column: 1 / 2
+      grid-row: 5 / 6
+    &--block4
+      grid-column: 1 / 2
+      grid-row: 6 / 7
+    &--block5
+      grid-column: 1 / 2
+      grid-row: 7 / 9
+    &--block6
+      grid-column: 1 / 2
+      grid-row: 9 / 10
+    &--block7
+      grid-column: 1 / 2
+      grid-row: 10 / 11
+    &--block8
+      grid-column: 1 / 2
+      grid-row: 11 / 12
+    &--block9
+      grid-column: 1 / 2
+      grid-row: 12 / 13
+    &--block10
+      grid-column: 1 / 2
+      grid-row: 13 / 14
+  .xlarge
+    &-top
+      &__bg
+        display: none
+      &__content
+        width: 80%
+        max-width: 80%
+  .large2
+    &-bottom
+      &__item
+        padding: 2px 5px
+        margin-right: 5px
+  .author
+    margin-bottom: 0
+  .investigation
+    &-wrapper
+      &__title
+        font-size: 21px
+        line-height: 26px
+  .recent
+    &__number
+      top: 30px
+@media (max-width: 400px)
+  .recent
+    &__title
+      font-size: 14px
+      line-height: 18px
+    &__number
+      top: 15px
+@media (max-width: 320px)
+  .logo
+    &-text
+      display: none
+  .menu
+    width: 65vw
+    justify-content: space-between

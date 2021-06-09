@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body id="#body">
+  <body id="body">
     <header class="header">
       <div class="container">
         <div class="header-top">
@@ -503,10 +503,13 @@
             <div class="xlarge-top post-xlarge__top">
               <img src="img/car.png" alt="" class="xlarge-top__bg" />
               <div class="xlarge-top__content">
-                <h4 class="subtitle xlarge-top__subtitle">Статьи</h4>
-                <h2 class="xlarge-top__title">
-                  Вам предложили работу&nbsp;мечты, но вы не&nbsp;можете...
-                </h2>
+                <div class="xlarge-top__frame">
+                  <h4 class="subtitle xlarge-top__subtitle">Статьи</h4>
+                  <h2 class="xlarge-top__title">
+                    Вам предложили работу&nbsp;мечты, но вы не&nbsp;можете...
+                  </h2>
+                </div>
+                <!-- /.xlarge-top__frame -->
                 <p class="xlarge-top__text">
                   Как поступить, если хочется пойти на работу мечты, но она находится в другом
                   городе. У вас семья и переезжать вы не готовы.
@@ -524,7 +527,7 @@
                   class="avatar xlarge-bottom__avatar"
                 />
                 <div class="xlarge-bottom__content">
-                  <h4 class="xlarge-bottom__author">Инна Квашова:</h4>
+                  <h4 class="xlarge-bottom__author">Инна Квашова<span class="symbol">:</span></h4>
                   <span class="xlarge-bottom__text">Каждый разработчик мечтает переехать в...</span>
                 </div>
               </div>
@@ -540,35 +543,38 @@
           <!-- /.post-xlarge -->
           <div class="article article--block2 post-large1">
             <span class="post-large1__sticker">Популярное</span>
-            <h4 class="subtitle post-large1__subtitle">Web design</h4>
-            <h2 class="post-large1__title">Где взять реальные проекты для&nbsp;портфолио</h2>
-            <div class="author post-large1__author">
-              <img
-                src="img/sara-zhennikova.png"
-                alt="photo: Инна Квашова"
-                class="avatar author__avatar"
-              />
-              <div class="author__content">
-                <h4 class="author__author">Сара Женникова</h4>
-                <div class="author__details">
-                  <span class="author__text">25 сентября</span>
-                  <div class="comments2 author__comments">
-                    <svg class="comments2__icon">
-                      <use xlink:href="img/icons.svg#comment"></use>
-                    </svg>
-                    <span class="comments2__count">16</span>
+            <div class="post-large1__frame">
+              <h4 class="subtitle post-large1__subtitle">Web design</h4>
+              <h2 class="post-large1__title">Где взять реальные проекты для&nbsp;портфолио</h2>
+              <div class="author post-large1__author">
+                <img
+                  src="img/sara-zhennikova.png"
+                  alt="photo: Инна Квашова"
+                  class="avatar author__avatar"
+                />
+                <div class="author__content">
+                  <h4 class="author__author">Сара Женникова</h4>
+                  <div class="author__details">
+                    <span class="author__text">25 сентября</span>
+                    <div class="comments2 author__comments">
+                      <svg class="comments2__icon">
+                        <use xlink:href="img/icons.svg#comment"></use>
+                      </svg>
+                      <span class="comments2__count">16</span>
+                    </div>
+                    <!-- /.comments author__comments -->
+                    <div class="likes author__likes">
+                      <svg class="likes__icon">
+                        <use xlink:href="img/icons.svg#heart"></use>
+                      </svg>
+                      <span class="likes__count">832</span>
+                    </div>
+                    <!-- /.likes author__likes -->
                   </div>
-                  <!-- /.comments author__comments -->
-                  <div class="likes author__likes">
-                    <svg class="likes__icon">
-                      <use xlink:href="img/icons.svg#heart"></use>
-                    </svg>
-                    <span class="likes__count">832</span>
-                  </div>
-                  <!-- /.likes author__likes -->
                 </div>
               </div>
             </div>
+            <!-- /.post-large1__frame -->
           </div>
           <!-- /.article article--block2 post-large1 -->
           <div class="article article--block3 post-regular1">
@@ -670,6 +676,13 @@
               Как защититься от бесконечных правок на этапе сдачи проекта
             </p>
             <span class="post-regular2__date">20 октября</span>
+          </div>
+          <div class="article article--block7 post-regular2">
+            <h2 class="post-regular2__title">Заказчики — мудаки?</h2>
+            <p class="post-regular2__text">
+              Как защититься от бесконечных правок на этапе сдачи проекта
+            </p>
+            <span class="post-regular2__date">26 октября</span>
           </div>
           <!-- /.article article--block7 post-regular2 -->
           <div class="article article--block8 post-regular2">
