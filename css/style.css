@@ -3675,9 +3675,6 @@ use.bookmarked {
     text-transform: uppercase;
     color: #262D33;
   }
-  .achero-label__text {
-    max-width: 80%;
-  }
   .achero-label__card {
     padding-top: 10px;
     padding-bottom: 10px;
