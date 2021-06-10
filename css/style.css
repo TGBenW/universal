@@ -429,12 +429,18 @@ use.bookmarked {
   height: 70px;
 }
 
+.aheader-top__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .logo {
   max-width: 163px;
   max-height: 40px;
 }
 
-.navbar {
+.anavbar {
   list-style-type: none;
   padding: 0;
   min-width: 540px;
@@ -443,7 +449,7 @@ use.bookmarked {
   justify-content: space-between;
 }
 
-.navbar__item {
+.anavbar__item {
   font-family: "Lato Black", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -451,7 +457,7 @@ use.bookmarked {
   line-height: 20px;
 }
 
-.navbar__link {
+.anavbar__link {
   text-decoration: none;
   color: #939699;
 }
