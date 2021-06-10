@@ -115,6 +115,11 @@ $(document).ready(function () {
     $(".navbar-menu").removeClass("navbar-menu--visible");
     $("#body").removeClass("oh");
   });
+  var burgerCloseLogo = $(".header-top__logo");
+  burgerCloseLogo.on("click", function () {
+    $(".navbar-menu").removeClass("navbar-menu--visible");
+    $("#body").removeClass("oh");
+  });
 
   //comment spoiler
   /* var commentButton = document.querySelector(".commentation-more");

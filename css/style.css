@@ -3175,7 +3175,6 @@ use.bookmarked {
     grid-column-gap: 25px;
   }
   .bcard__image {
-    height: 100%;
     max-height: 100%;
   }
   .selection {
@@ -3622,6 +3621,7 @@ use.bookmarked {
     bottom: -20px;
     left: -40px;
     z-index: 997;
+    overflow: auto;
   }
   .navbar-menu--visible {
     display: block;
@@ -4219,9 +4219,6 @@ use.bookmarked {
   .recent {
     grid-template-columns: 1fr 2fr;
   }
-  .recent__image {
-    height: 100%;
-  }
   .recent__details {
     display: flex;
     flex-direction: column;
@@ -4496,6 +4493,9 @@ use.bookmarked {
   }
   .ccard2__image {
     right: -40%;
+  }
+  .modal-dialog {
+    padding: 10px 20px;
   }
 }
 
