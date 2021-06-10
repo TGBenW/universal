@@ -64,6 +64,8 @@
     width: 263px
     height: 430px
     color: $text-dark
+    &--responsive
+      display: none
     &__top
       margin: 0
       margin-bottom: 20px
@@ -84,6 +86,8 @@
       font-weight: bold
       font-size: 16px
       line-height: 25px
+      max-height: 50px
+      overflow: auto
     &__text
       font-family: $lato-400
       font-style: normal
@@ -92,6 +96,8 @@
       line-height: 20px
       color: $text-primary
       padding: 0
+      max-height: 100px
+      overflow: auto
     &__details
       display: flex
       flex-direction: row

@@ -50,7 +50,18 @@
             <li class="anavbar__item"><a href="#footer" class="anavbar__link">Web Design</a></li>
           </ul>
           <!-- /.anavbar aheader__navbar -->
-          <button data-toggle="modal" class="modbutton aheader__button">оставить заявку</button>
+          <div class="menu aheader__buttons">
+            <button data-toggle="modal" class="modbutton aheader__button">оставить заявку</button>
+            <!-- /.button aheader-top__button -->
+            <button
+              class="menu-button aheader__menu-button"
+              aria-label="Navigation menu burger button"
+            >
+              <span class="menu-button__line menu-button__line-aline"></span>
+              <span class="menu-button__line menu-button__line-aline"></span>
+              <span class="menu-button__line menu-button__line-aline"></span>
+            </button>
+          </div>
           <!-- /.button aheader__button -->
         </div>
         <!-- /.aheader -->
@@ -278,19 +289,50 @@
           </div>
           <!-- /.article-card -->
           <!-- /.article__subtitle -->
-          <p class="aarticle__text">
+          <p class="aarticle__text aarticle__text-left">
             Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
             роль в формировании дальнейших направлений развития. Значимость этих проблем настолько
             очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности
             влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
           </p>
-          <p class="aarticle__text aarticle__text-addindent">
+          <p class="aarticle__text aarticle__text-left aarticle__text-addindent">
             Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
             роль в формировании дальнейших направлений развития. Значимость этих проблем настолько
             очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности
             влечет за собой процесс внедрения и модернизации
           </p>
-          <p class="aarticle__text aarticle__text-addindent">
+          <div class="aarticle-card aarticle-card--responsive">
+            <h3 class="aarticle-card__top">Материал aaaпо теме</h3>
+            <img src="../img/animal.png" alt="photo: girafe" class="aarticle-card__image" />
+            <h3 class="aarticle-card__title">20+ инструментов для&nbsp;js&#8209;разработчика</h3>
+            <p class="aarticle-card__text">
+              Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты
+              помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в
+              виде...
+            </p>
+            <div class="aarticle-card__details">
+              <div class="eye aarticle-card__eye">
+                <svg class="eye__icon">
+                  <use xlink:href="../img/icons.svg#eye"></use>
+                </svg>
+                <span class="eye__count">1,623</span>
+              </div>
+              <!-- /.eye aarticle-card__eye -->
+              <div class="acomments aarticle-card__comments">
+                <svg class="acomments__icon">
+                  <use xlink:href="../img/icons.svg#comment"></use>
+                </svg>
+                <span class="acomments__count">102</span>
+              </div>
+              <!-- /.comments aarticle-card__comments -->
+            </div>
+          </div>
+          <!-- /.article-card -->
+          <p
+            class="
+              aarticle__text aarticle__text-left aarticle__text-lefter aarticle__text-addindent
+            "
+          >
             Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
             роль в формировании дальнейших направлений развития. Значимость этих проблем настолько
             очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности
@@ -619,8 +661,8 @@
           <div id="myDIV" class="comment-hidden" style="display: none">
             <div class="comment comment--primary commentation-block">
               <img
-                src="../img/kris-jakov.png"
-                alt="photo: Крис Яков"
+                src="../img/vasilisa-lebedeva.png"
+                alt="photo: Василиса Лебедева"
                 class="avatar comment-image"
               />
               <div class="comment-content">
@@ -654,8 +696,8 @@
             <!-- /.comment comments-content -->
             <div class="comment comment--reply commentation-block">
               <img
-                src="../img/kris-jakov.png"
-                alt="photo: Крис Яков"
+                src="../img/mikhail-fomin.png"
+                alt="photo: Михаил Фомин"
                 class="avatar comment-image"
               />
               <div class="comment-content">
@@ -689,8 +731,8 @@
             <!-- /.comment comments-content -->
             <div class="comment comment--primary commentation-block">
               <img
-                src="../img/kris-jakov.png"
-                alt="photo: Крис Яков"
+                src="../img/alisa-matveeva.png"
+                alt="photo: Алиса Матвеева"
                 class="avatar comment-image"
               />
               <div class="comment-content">
@@ -699,10 +741,9 @@
                   <span class="comment-content__top-date">17 июля, 12:51</span>
                 </div>
                 <p class="comment-content__text">
-                  Некоторым фрилансерам, работающим на постоянной основе, действительно удобно
-                  получить такой статус, все доходы контролируются, зарплата приходит регулярно. А
-                  что делать тем, кто подрабатывает несколько раз в месяц? Платить налог с этой
-                  небольшой суммы?
+                  Некоторым фрилансерам, действительно удобно получить такой статус, все доходы
+                  контролируются, зарплата приходит регулярно. А что делать тем, кто подрабатывает
+                  несколько раз в месяц?
                 </p>
                 <div class="comment-content__details">
                   <div class="reply comment-content__details-reply">
