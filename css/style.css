@@ -433,7 +433,7 @@ use.bookmarked {
   height: 70px;
 }
 
-.aheader-top__logo {
+.aheader__logo {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -492,7 +492,7 @@ use.bookmarked {
   position: absolute;
   bottom: -195px;
   z-index: 100;
-  right: 0;
+  right: 94px;
   width: 263px;
   background: #FFFFFF;
   border: 1px solid #D9DADB;
@@ -889,9 +889,14 @@ use.bookmarked {
 
 .aarticle__text {
   position: relative;
-  margin: 15px 0;
-  max-width: 623px;
+  margin: 20px 0;
+  max-width: 622px;
   z-index: 1;
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .aarticle__text--letter {
@@ -926,6 +931,10 @@ use.bookmarked {
   color: #262D33;
 }
 
+.aarticle__text-addindent {
+  margin-top: 30px;
+}
+
 .aarticle__quote {
   position: absolute;
   top: 50px;
@@ -949,7 +958,7 @@ use.bookmarked {
 
 .aarticle-card {
   position: absolute;
-  top: 150px;
+  top: 135px;
   right: 97px;
   width: 263px;
   height: 430px;
@@ -989,6 +998,7 @@ use.bookmarked {
   font-size: 14px;
   line-height: 20px;
   color: #4B5157;
+  padding: 0;
 }
 
 .aarticle-card__details {
@@ -1706,7 +1716,7 @@ use.bookmarked {
   overflow: auto;
 }
 
-.social {
+.social--card {
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -1736,7 +1746,7 @@ use.bookmarked {
 }
 
 .gallery {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   display: grid;
   grid-template-columns: 877px 1px 262px;
   grid-template-rows: 555px 70px;
@@ -2575,7 +2585,7 @@ use.bookmarked {
 .commentation-more {
   cursor: pointer;
   padding: 13px;
-  margin-bottom: 30px;
+  margin-bottom: 57px;
   width: 100%;
   height: 50px;
   border: 1px solid #D9DADB;
@@ -2634,7 +2644,7 @@ use.bookmarked {
 
 .comment {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   display: grid;
   grid-template-columns: 75px 570px;
   grid-column-gap: 15px;
@@ -2852,7 +2862,11 @@ use.bookmarked {
   line-height: 50px;
   color: #262D33;
   max-height: 101px;
-  overflow: auto;
+  overflow: hidden;
+}
+
+.newsletter-article {
+  padding-top: 90px;
 }
 
 .subscribe {
