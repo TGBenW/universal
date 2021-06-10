@@ -26,34 +26,34 @@
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat(6, 1fr)
   .article
-    &--block1
+    &-block1
       grid-column: 1 / 4
       grid-row: 1 / 3
-    &--block2
+    &-block2
       grid-column: 3 / 4
       grid-row: 3 / 5
-    &--block3
+    &-block3
       grid-column: 2 / 3
       grid-row: 3 / 4
-    &--block4
+    &-block4
       grid-column: 1 / 2
       grid-row: 5 / 7
-    &--block5
+    &-block5
       grid-column: 1 / 2
       grid-row: 3 / 5
-    &--block6
+    &-block6
       grid-column: 2 / 3
       grid-row: 4 / 5
-    &--block7
+    &-block7
       grid-column: 3 / 4
       grid-row: 5 / 6
-    &--block8
+    &-block8
       grid-column: 2 / 3
       grid-row: 5 / 6
-    &--block9
+    &-block9
       grid-column: 2 / 3
       grid-row: 6 / 7
-    &--block10
+    &-block10
       grid-column: 3 / 4
       grid-row: 6 / 7
   .post
@@ -114,6 +114,7 @@
         margin: 0
         font-size: 30px
         line-height: 36px
+        overflow: hidden
       &__text
         font-size: 18px
         line-height: 26px
@@ -135,6 +136,10 @@
         justify-content: center
   .investigation
     height: 320px
+    &-wrapper
+      &__title
+        max-height: 160px
+        overflow: hidden
   .blog
     grid-template-columns: 3fr 1fr
     grid-column-gap: 20px
@@ -147,6 +152,11 @@
     &__image
       //height: 100%
       max-height: 100%
+    &-description
+      &__title
+        max-height: 76px
+      &__text
+        max-height: 101px
   .selection
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat(5, 1fr)
@@ -171,6 +181,9 @@
     align-items: center
     align-content: center
     justify-content: center
+    &-content
+      &__title
+        overflow: hidden
   .ccard2
     &__circle
       width: 280px
@@ -181,6 +194,8 @@
       margin-bottom: 50px
   .newsletter
     padding: 60px 10% 70px 10%
+    &__title
+      overflow: hidden
 @media (min-width: 992px)
   .navbar__link,
   .addread__title,
@@ -254,27 +269,27 @@
   .dislike__icon-downvote
     &:hover
       fill: $accent8
-  .footer-top__list--list1
+  .footer-top__list-list1
     &:hover
       border-top: 7px solid $accent8
       padding-top: 28px
-  .footer-top__list--list2
+  .footer-top__list-list2
     &:hover
       border-top: 7px solid $accent3
       padding-top: 28px
-  .footer-top__list--list3
+  .footer-top__list-list3
     &:hover
       border-top: 7px solid $accent7
       padding-top: 28px
-  .footer-top__list--list4
+  .footer-top__list-list4
     &:hover
       border-top: 7px solid $accent4
       padding-top: 28px
-  .footer-top__list--list5
+  .footer-top__list-list5
     &:hover
       border-top: 7px solid $accent5
       padding-top: 28px
-  .footer-top__list--list6
+  .footer-top__list-list6
     &:hover
       border-top: 7px solid $accent2
       padding-top: 28px
@@ -300,34 +315,34 @@
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat(8, 1fr)
   .article
-    &--block1
+    &-block1
       grid-column: 1 / 4
       grid-row: 1 / 3
-    &--block2
+    &-block2
       grid-column: 2 / 4
       grid-row: 5 / 7
-    &--block3
+    &-block3
       grid-column: 3 / 4
       grid-row: 3 / 4
-    &--block4
+    &-block4
       grid-column: 1 / 4
       grid-row: 7 / 8
-    &--block5
+    &-block5
       grid-column: 1 / 3
       grid-row: 3 / 5
-    &--block6
+    &-block6
       grid-column: 3 / 4
       grid-row: 4 / 5
-    &--block7
+    &-block7
       grid-column: 1 / 2
       grid-row: 5 / 6
-    &--block8
+    &-block8
       grid-column: 1 / 2
       grid-row: 6 / 7
-    &--block9
+    &-block9
       grid-column: 1 / 2
       grid-row: 8 / 9
-    &--block10
+    &-block10
       grid-column: 2 / 4
       grid-row: 8 / 9
   .post
@@ -336,6 +351,8 @@
       grid-template-rows: 3fr 1px 1fr
     &-regular2
       max-height: 205px
+      &__title
+        overflow: hidden
       &__text
         font-size: 12px
         line-height: 18px
@@ -367,9 +384,13 @@
       &__text
         font-size: 18px
         line-height: 24px
+        max-height: 120px
     &-bottom
       width: 100%
   .regular1
+    &-top
+      &__title
+        max-height: 125px
     &-bottom
       padding: 6% 30%
   .large2
@@ -392,6 +413,10 @@
           margin-right: 10px
         &--end
           margin-bottom: 15px
+  .large3
+    &-bottom
+      &__title
+        max-height: 70px
   .investigation
     height: 290px
     &-wrapper
@@ -410,6 +435,10 @@
         grid-template-columns: repeat(2, 1fr)
         grid-column-gap: 20px
         grid-template-rows: repeat(4, 1fr)
+  .bcard
+    &-description
+      &__title
+        overflow: hidden
   .recent
     &__number
       right: 30px
@@ -590,34 +619,34 @@
     grid-template-columns: repeat(2, 1fr)
     grid-template-rows: repeat(9, minmax(min-content, 1fr))
   .article
-    &--block1
+    &-block1
       grid-column: 1 / 3
       grid-row: 1 / 3
-    &--block2
+    &-block2
       grid-column: 1 / 3
       grid-row: 5 / 7
-    &--block3
+    &-block3
       grid-column: 2 / 3
       grid-row: 3 / 4
-    &--block4
+    &-block4
       grid-column: 2 / 3
       grid-row: 7 / 9
-    &--block5
+    &-block5
       grid-column: 1 / 2
       grid-row: 3 / 5
-    &--block6
+    &-block6
       grid-column: 2 / 3
       grid-row: 4 / 5
-    &--block7
+    &-block7
       grid-column: 1 / 2
       grid-row: 7 / 8
-    &--block8
+    &-block8
       grid-column: 1 / 2
       grid-row: 8 / 9
-    &--block9
+    &-block9
       grid-column: 1 / 2
       grid-row: 9 / 10
-    &--block10
+    &-block10
       grid-column: 2 / 3
       grid-row: 9 / 10
   .post
@@ -845,34 +874,34 @@
     grid-template-rows: repeat(14, 200px)
     grid-row-gap: 30px
   .article
-    &--block1
+    &-block1
       grid-column: 1 / 2
       grid-row: 1 / 4
-    &--block2
+    &-block2
       grid-column: 1 / 2
       grid-row: 4 / 6
-    &--block3
+    &-block3
       grid-column: 1 / 2
       grid-row: 6 / 7
-    &--block4
+    &-block4
       grid-column: 1 / 2
       grid-row: 7 / 8
-    &--block5
+    &-block5
       grid-column: 1 / 2
       grid-row: 8 / 10
-    &--block6
+    &-block6
       grid-column: 1 / 2
       grid-row: 10 / 11
-    &--block7
+    &-block7
       grid-column: 1 / 2
       grid-row: 11 / 12
-    &--block8
+    &-block8
       grid-column: 1 / 2
       grid-row: 12 / 13
-    &--block9
+    &-block9
       grid-column: 1 / 2
       grid-row: 13 / 14
-    &--block10
+    &-block10
       grid-column: 1 / 2
       grid-row: 14 / 15
   .post
@@ -1074,8 +1103,9 @@
       &:not(:first-child)
         margin-left: 10px
 @media (max-width: 470px)
-  .addvertizer
-    //margin-top: 120px
+  .addread
+    &__title
+      overflow: hidden
   .investigation
     &-wrapper
       padding: 50px 0 55px 0
@@ -1083,6 +1113,15 @@
     &-large2
       &__bottom
         overflow: auto
+  .xlarge
+    &-top
+      &__title
+        max-height: 240px
+      &__text
+        max-height: 170px
+  .recent
+    &__title
+      max-height: 48px
   .footer
     padding-bottom: 25px
     &-top
@@ -1127,34 +1166,34 @@
     grid-column-gap: 0
     grid-template-rows: repeat(13, 200px)
   .article
-    &--block1
+    &-block1
       grid-column: 1 / 2
       grid-row: 1 / 3
-    &--block2
+    &-block2
       grid-column: 1 / 2
       grid-row: 3 / 5
-    &--block3
+    &-block3
       grid-column: 1 / 2
       grid-row: 5 / 6
-    &--block4
+    &-block4
       grid-column: 1 / 2
       grid-row: 6 / 7
-    &--block5
+    &-block5
       grid-column: 1 / 2
       grid-row: 7 / 9
-    &--block6
+    &-block6
       grid-column: 1 / 2
       grid-row: 9 / 10
-    &--block7
+    &-block7
       grid-column: 1 / 2
       grid-row: 10 / 11
-    &--block8
+    &-block8
       grid-column: 1 / 2
       grid-row: 11 / 12
-    &--block9
+    &-block9
       grid-column: 1 / 2
       grid-row: 12 / 13
-    &--block10
+    &-block10
       grid-column: 1 / 2
       grid-row: 13 / 14
   .xlarge
