@@ -444,7 +444,6 @@ use.bookmarked {
   font-size: 0.7em;
   letter-spacing: 0.1em;
   transition: all 0.3s;
-  text-transform: uppercase;
 }
 
 .accordion-header:hover {
@@ -855,6 +854,7 @@ use.bookmarked {
   opacity: 0;
   transition: opacity 0.2s;
   z-index: 999;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
@@ -1342,7 +1342,7 @@ use.bookmarked {
   color: #FFFFFF;
   margin-bottom: 27px;
   max-height: 80px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .post-regular1 {
@@ -4141,6 +4141,9 @@ use.bookmarked {
   .gallery {
     grid-template-rows: 1fr 70px;
   }
+  .modal__message {
+    min-height: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -4458,6 +4461,9 @@ use.bookmarked {
   .ccard2__image {
     right: -35%;
   }
+  .post-large1__title {
+    max-height: 90px;
+  }
   .social__list {
     flex-wrap: nowrap;
     justify-content: center;
@@ -4479,13 +4485,20 @@ use.bookmarked {
     padding: 50px 0 55px 0;
   }
   .post-large2__bottom {
-    overflow: auto;
+    overflow: hidden;
   }
   .xlarge-top__title {
     max-height: 240px;
   }
   .xlarge-top__text {
     max-height: 170px;
+  }
+  .large2-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .large2-bottom__item {
+    margin-bottom: 5px;
   }
   .recent__title {
     max-height: 48px;
@@ -4590,7 +4603,12 @@ use.bookmarked {
     width: 80%;
     max-width: 80%;
   }
+  .large2-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .large2-bottom__item {
+    margin-bottom: 8px;
     padding: 2px 5px;
     margin-right: 5px;
   }
@@ -5284,5 +5302,14 @@ use.bookmarked {
   .forward__link {
     display: none;
   }
+}
+
+.mobmenubtn {
+  font-family: "Lato Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

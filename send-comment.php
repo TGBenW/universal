@@ -6,10 +6,7 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 //$car = array_key_exists('car', $_POST) ? $_POST['car'] : null;
-$name = array_key_exists('name', $_POST) ? $_POST['name'] : null;
-$phone = array_key_exists('phone', $_POST) ? $_POST['phone'] : null;
-$message = array_key_exists('message', $_POST) ? $_POST['message'] : null;
-$email = array_key_exists('email', $_POST) ? $_POST['email'] : null;
+$comment = array_key_exists('comment', $_POST) ? $_POST['comment'] : null;
 //$name = $_POST['name'];
 //$phone = $_POST['phone'];
 //$message = $_POST['message'];
@@ -19,7 +16,8 @@ $email = array_key_exists('email', $_POST) ? $_POST['email'] : null;
 $title = "Новый комментарий UNV-Universal";
 $body = "
 <h2>Новый комментарий:</h2>
-$comment";
+$comment
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
