@@ -2399,7 +2399,7 @@ use.bookmarked {
   color: #FFFFFF;
   text-align: center;
   max-height: 250px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .button-selection__images {
