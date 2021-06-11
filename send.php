@@ -5,8 +5,7 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = array_key_exists('name', $_POST) ? $_POST['name'] : null;
-$phone = array_key_exists('phone', $_POST) ? $_POST['phone'] : null;
+$select = array_key_exists('select', $_POST) ? $_POST['select'] : null;
 $message = array_key_exists('message', $_POST) ? $_POST['message'] : null;
 $email = array_key_exists('email', $_POST) ? $_POST['email'] : null;
 
@@ -14,10 +13,9 @@ $email = array_key_exists('email', $_POST) ? $_POST['email'] : null;
 $title = "Новая заявка UNV-Universal";
 $body = "
 <h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br>
+<b>Тема:</b> $name<br>
+<b>Сообщение:</b>$message<br>
 <b>Почта:</b> $email<br>
-<b>Сообщение:</b><br>$message
 ";
 
 // Настройки PHPMailer

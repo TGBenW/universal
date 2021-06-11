@@ -5,12 +5,11 @@
     top: 0
     right: 0
     bottom: 0
-    background-color: rgba(194, 195, 196, 0.281)
+    background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
     visibility: hidden
     opacity: 0
-    transition: opacity 0.2s
-    z-index: 998
+    transition: opacity .3s
     &--visible
       visibility: visible
       opacity: 1
@@ -18,70 +17,146 @@
     position: fixed
     top: 50%
     left: 50%
-    max-width: 478px
-    padding: 33px 88px
-    background-color: #262d33cc
+    max-width: 360px
+    width: 60%
+    max-height: 100vh
+    padding: 30px 35px 40px
+    background-color: $text-light
+    color: $bg-light
+    border-radius: 10px
+    z-index: 102
     transform: translate(-50%, -50%)
-    color: $text-light
-    border-radius: 8px
-    z-index: 101
     visibility: hidden
-    opacity: 0
-    transition: opacity 0.2s
-    z-index: 999
     overflow: auto
+    opacity: 0
+    transition: opacity .3s
     &--visible
       visibility: visible
       opacity: 1
   &__close
     position: absolute
-    top: 17px
     right: 18px
+    top: 17px
     text-decoration: none
-    cursor: pointer
-  &__icon
-    height: 16px
-    width: 16px
-    fill: $text-light
+  &__label
+    &-select
+      display: block
+      margin-bottom: 1px
+      font-family: $lato-900
+      font-size: 14px
+      font-weight: 900
+      line-height: 20px
+      color: $text-dark
+    &-message
+      display: block
+      margin-bottom: 3px
+      font-family: $lato-900
+      font-size: 14px
+      font-weight: 900
+      line-height: 20px
+      color: $text-dark
+    &-email
+      display: block
+      margin-bottom: 1px
+      font-family: $lato-900
+      font-size: 14px
+      font-weight: 900
+      line-height: 20px
+      color: $text-dark
   &__title
-    font-family: $lato-900
-    font-style: normal
-    font-weight: 900
-    letter-spacing: 0.5px
-    font-style: normal
-    font-size: 18px
-    line-height: 23px
-    margin-top: 0
-    margin-bottom: 15px
-    text-align: center
-    text-transform: uppercase
-  &__input
-    width: 100%
-    &:not(:first-child)
-      margin-top: 15px
-  &__send
-    width: 100%
+    margin-bottom: 25px
+    font-family: "Roboto Slab", serif
+    color: $text-dark
+    font-size: 20px
+    font-weight: 700
+    line-height: 25px
+  &__form
+    &-top
+      display: flex
+      flex-direction: column
+      align-items:
+      margin-bottom: 17px
+      height: 65px
+    &-middle
+      display: flex
+      flex-direction: column
+      align-items:
+      height: 159px
+    &-bottom
+      display: flex
+      flex-direction: column
+      align-items:
+      height: 80px
+    &-select
+      margin-top: 4px
+      width: 290px
+      height: 40px
+      padding: 10px 13px
+      outline: none
+      border: 1px solid $line
+      border-radius: 6px
+      color: $text-secondary
+      appearance: none
+      background: #fff url('../img/modal-arrow.png')
+      background-position: calc(100% - 15px)
+      background-size: 10px 10px
+      background-repeat: no-repeat
+      font-family: $lato-400
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+      color: #939699
+      appearance: none
+    &-input
+      margin-top: 3px
+      padding: 5px 13px
+      height: 40px
+      border: 1px solid $line
+      border-radius: 6px
+      width: 100%
+    &-message
+      width: 100%
+      padding: 10px 13px
+      min-height: 122px
+      outline: none
+      resize: none
+      color: #000
+      border: 1px solid $line
+      border-radius: 6px
+    &-checkbox
+      position: absolute
+      top: 4px
+      left: 3px
+      transform: scale(1.7)
+      opacity: 0.9
+      cursor: pointer
+      margin: 0 10px 0 0
+    &-submit
+      margin-top: 12px
+      display: flex
+      justify-content: space-between
+    &-btn
+      width: 122px
+      height: 40px
+    &-text
+      position: absolute
+      top: 0
+      //@include font-param(14px, 400, 20px)
+      //color: $txt-base-dark
+      font-family: $lato-400
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+      color: #4B5157
+  .checkbox
+    position: relative
+    height: 38px
     display: flex
-    align-items: center
-    justify-content: space-between
-    flex-wrap: wrap
-  &__message
-    width: 100%
-    margin-top: 15px
-    margin-bottom: 15px
-    min-height: 123px
-  &__required
-    font-family: $lato-400
-    font-style: normal
+    align-items: baseline
+    align-content: start
+    flex-direction: column-reverse
+    padding-left: 30px
+  .invalid
+    color: red
+    line-height: 12px
     font-size: 12px
-    line-height: 15px
-    opacity: 0.8
-    color: $text-light
-  &__button
-    cursor: pointer
-    font-family: $lato-900
-    font-style: normal
-    font-weight: 900
-    font-size: 14px
-    line-height: 20px
-    color: $text-light

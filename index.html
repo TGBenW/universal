@@ -1509,57 +1509,57 @@
     </footer>
     <!-- /.footer-section -->
     <a href="#" class="scrollup">Наверх</a>
-    <div class="modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog" style="overflow-y: scroll; -webkit-overflow-scrolling: touch">
+
+    <div class="modal" id="header-modal">
+      <div class="modal__overlay modal__overlay--visible"></div>
+      <div class="modal__dialog modal__dialog--visible">
         <a href="#" class="modal__close">
-          <svg class="modal__icon">
-            <use href="img/icons.svg#close"></use>
-          </svg>
+          <img src="img/cancel.png" alt="icon: close" loading="lazy" width="16" height="16" />
         </a>
-        <h3 class="modal__title modal__title--mb-3">Ваша заявка</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Ваше имя*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="input modal__input phone"
-            placeholder="Ваш номер телефона*"
-            name="phone"
-            required
-            minlength="18"
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Ваш email*"
-            name="email"
-            required
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Ваша заявка"
-            name="message"
-          ></textarea>
-          <div class="modal__send">
-            <button class="button modal__button" aria-label="Send booking form button">
-              Отправить
-            </button>
-            <span class="modal__required">* Обязательные поля</span>
+        <h4 class="modal__title">Обратная связь</h4>
+        <form action="send.php" method="POST" class="modal__form form" novalidate="novalidate">
+          <div class="modal__form-top">
+            <label for="theme" class="modal__label-select">Тема</label>
+            <select id="theme" class="modal__form-select" required="" name="select">
+              <option value="" hidden="">Выберите тему</option>
+              <option value="Сотрудничество">Сотрудничество</option>
+              <option value="Предложение">Предложения</option>
+            </select>
           </div>
-          <!-- /.modal__send -->
+
+          <div class="modal__form-middle">
+            <label for="message" class="modal__label-message">Сообщение</label>
+            <textarea
+              class="modal__form-message"
+              id="message"
+              name="message"
+              required=""
+            ></textarea>
+          </div>
+
+          <div class="modal__form-bottom">
+            <label for="email" class="modal__label-email">Email</label>
+            <input
+              type="email"
+              class="input modal__form-input"
+              id="email"
+              name="email"
+              required=""
+              autocomplete="off"
+            />
+          </div>
+          <div class="checkbox modal__form-agree">
+            <input id="check" type="checkbox" class="modal__form-checkbox" name="box" required="" />
+            <label for="check" class="checkbox-label modal__form-text"
+              >Согласен с обработкой данных</label
+            >
+          </div>
+          <div class="modal__form-submit">
+            <button type="submit" class="modal__form-btn btn btn-hover">Отправить</button>
+          </div>
         </form>
       </div>
-      <!-- /.modal__dialog -->
     </div>
-    <!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"

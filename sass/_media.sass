@@ -495,10 +495,6 @@
         margin-bottom: 15px
   .gallery
     grid-template-rows: 400px 70px
-  .modal
-    &__dialog
-      width: 478px
-      padding: 30px 50px
 @media (max-width: 767px)
   .container
     width: 92%
@@ -831,12 +827,16 @@
       opacity: 0.85
   .gallery
     grid-template-rows: 1fr 70px
-  .modal
-    &__message
-      min-height: 50px
   .scrollup
     opacity: 0.3
     right: 35px
+  .modal
+    &__dialog
+      width: 65vw
+      padding: 33px 50px
+    &__form
+      &-select
+        width: 100%
 @media (max-width: 576px)
   .addvertizer
     margin-top: 150px
@@ -1045,13 +1045,13 @@
     &-bottom
       &__text
         font-size: 12px
-  .modal
-    &__dialog
-      width: 92%
-      padding: 20px 20px
   .scrollup
     bottom: 20px
     right: 10px
+  .modal
+    &__dialog
+      width: 80vw
+      padding: 33px 40px
 @media (max-width: 500px)
   .addvertizer
   .blog
@@ -1247,6 +1247,10 @@
       z-index: 0
     &__image
       right: -40%
+  .modal
+    &__dialog
+      width: 95vw
+      padding: 18px 20px
 @media (max-width: 400px)
   .accordion
     &-header
@@ -1318,9 +1322,6 @@
       z-index: 0
     &__image
       right: -40%
-  .modal
-    &-dialog
-      padding: 10px 20px
 
 @media (max-width: 350px)
   .accordion
