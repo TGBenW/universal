@@ -1677,6 +1677,7 @@ use.bookmarked {
 .regular1-bottom {
   margin: auto;
   padding: 4% 30%;
+  cursor: pointer;
 }
 
 .regular1-bottom__download {
@@ -3409,7 +3410,6 @@ use.bookmarked {
   .back__link:hover,
   .forward__link:hover,
   .bcard-description__link:hover,
-  .blog-right__more:hover,
   .thanks-link:hover {
     text-decoration: underline;
   }
