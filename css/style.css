@@ -123,6 +123,43 @@ use.bookmarked {
   cursor: auto;
 }
 
+.up {
+  padding: 5px 10px;
+  max-width: 135px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #D9DADB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.up-cont {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.up__text {
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.up__arrow {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #262D33;
+  transform: rotate(270deg);
+}
+
 .header {
   background-color: #262D33;
   max-height: 545px;
@@ -1844,7 +1881,7 @@ use.bookmarked {
   border-top: none;
   border-right: none;
   max-height: 70px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .gallery__line {
@@ -2500,6 +2537,7 @@ use.bookmarked {
 
 .suggestion-card {
   height: 275px;
+  text-decoration: none;
 }
 
 .suggestion-card__image {
@@ -2626,6 +2664,11 @@ use.bookmarked {
   border: 1px solid #D9DADB;
   border-radius: 25px;
   background-color: #FFFFFF;
+  display: none;
+}
+
+.commentation-more--visible {
+  display: block;
 }
 
 .commentation-more__button {
@@ -2868,12 +2911,12 @@ use.bookmarked {
 }
 
 .part4__send {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .part4 > form > label {
   position: absolute;
-  top: 120px;
+  top: 125px;
   font-size: 12px;
 }
 
@@ -2960,7 +3003,7 @@ use.bookmarked {
 .footer-top {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding-bottom: 64px;
+  padding-bottom: 54px;
 }
 
 .footer-top__list {
@@ -3111,6 +3154,9 @@ use.bookmarked {
   }
   .hero {
     grid-template-columns: 1fr 263px;
+  }
+  .main__title {
+    font-size: 34px;
   }
   .addread {
     padding: 25px;
@@ -3352,6 +3398,9 @@ use.bookmarked {
   .blog-right__more:hover,
   .thanks-link:hover {
     text-decoration: underline;
+  }
+  .up:hover {
+    background-color: #D9DADB;
   }
   .modbutton:hover {
     background-color: #54595d;
@@ -3684,6 +3733,9 @@ use.bookmarked {
   .footer-bottom__text {
     flex-basis: 100%;
     margin-bottom: 15px;
+  }
+  .gallery {
+    grid-template-rows: 400px 70px;
   }
   .modal__dialog {
     width: 478px;
@@ -4030,7 +4082,7 @@ use.bookmarked {
     font-size: 14px;
     line-height: 20px;
     margin: 0;
-    height: 40px;
+    max-height: 40px;
     overflow: hidden;
   }
   .accordion-header__subtitle {
@@ -4085,6 +4137,9 @@ use.bookmarked {
     line-height: 20px;
     color: #FFFFFF;
     opacity: 0.85;
+  }
+  .gallery {
+    grid-template-rows: 1fr 70px;
   }
 }
 
@@ -4687,6 +4742,9 @@ use.bookmarked {
   .aauthor__name {
     width: 100%;
   }
+  .part4 > form > label {
+    top: 125px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -4764,6 +4822,9 @@ use.bookmarked {
   .commentation {
     padding-left: 0;
   }
+  .comment {
+    grid-template-columns: 75px 1fr;
+  }
   .comment--reply {
     padding-left: 60px;
   }
@@ -4772,6 +4833,9 @@ use.bookmarked {
     margin-top: 1px;
     width: 99%;
     height: 90%;
+  }
+  .part4 > form > label {
+    top: 115px;
   }
 }
 
@@ -4943,6 +5007,9 @@ use.bookmarked {
   .thanks-section {
     padding-top: 70px;
   }
+  .part4 > form > label {
+    top: 85px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -5047,6 +5114,18 @@ use.bookmarked {
   .gallery__name {
     font-size: 10px;
   }
+  .comment-content__text {
+    font-size: 14px;
+  }
+  .part2-title {
+    font-size: 18px;
+  }
+  .part4__comment {
+    height: 60px;
+  }
+  .part4 > form > label {
+    top: 65px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -5113,6 +5192,9 @@ use.bookmarked {
   .commentation-more__button {
     margin-left: 30vw;
   }
+  .ncomment {
+    height: 220px;
+  }
   .ncomment__part1 {
     display: none;
   }
@@ -5143,14 +5225,17 @@ use.bookmarked {
   .logo-text {
     display: none;
   }
+  .ahero-section {
+    min-height: 580px;
+  }
   .ahero-card {
-    bottom: 50px;
+    bottom: -40px;
   }
   .ahero-block3 {
     padding-top: 0;
   }
   .ahero-block4__text {
-    max-width: 45vw;
+    max-width: 100%;
     line-height: 18px;
   }
   .comment {

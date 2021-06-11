@@ -104,6 +104,12 @@ $(document).ready(function () {
     });
   });
 
+  //more comments button hide on click
+  var commentMoreButton = $(".commentation-more");
+  commentMoreButton.on("click", function () {
+    $(".commentation-more").removeClass("commentation-more--visible");
+  });
+
   //burger menu
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {

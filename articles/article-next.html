@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body class="abody">
+  <body id="body" class="abody">
     <header class="aheader-section">
       <div class="container">
         <div class="aheader">
@@ -111,7 +111,7 @@
                   <svg class="back__icon">
                     <use xlink:href="../img/icons.svg#arrow"></use>
                   </svg>
-                  <a href="article.html" class="back__link">Назад</a>
+                  <a href="article-prev.html" class="back__link">Назад</a>
                 </div>
                 <!-- /.__back -->
                 <div class="forward ahero-block2__forward">
@@ -441,7 +441,7 @@
     <section id="suggestion" class="suggestion-section">
       <div class="container">
         <div class="suggestion">
-          <div class="suggestion-card">
+          <a href="article.html" class="suggestion-card">
             <img src="../img/suggestion1.png" alt="" class="suggestion-card__image" />
             <h3 class="suggestion-card__title">Техника работы по помидоркам — это как?</h3>
             <div class="suggestion-card__details">
@@ -460,9 +460,9 @@
               </div>
               <!-- /.comments suggestion-card__comments -->
             </div>
-          </div>
+          </a>
           <!-- /.suggestion-card -->
-          <div class="suggestion-card">
+          <a href="article.html" class="suggestion-card">
             <img src="../img/suggestion2.png" alt="" class="suggestion-card__image" />
             <h3 class="suggestion-card__title">Вопросы на собеседовании для джуна</h3>
             <div class="suggestion-card__details">
@@ -481,9 +481,9 @@
               </div>
               <!-- /.comments suggestion-card__comments -->
             </div>
-          </div>
+          </a>
           <!-- /.suggestion-card -->
-          <div class="suggestion-card">
+          <a href="article.html" class="suggestion-card">
             <img src="../img/suggestion3.png" alt="" class="suggestion-card__image" />
             <h3 class="suggestion-card__title">Список стран, куда можно улететь</h3>
             <div class="suggestion-card__details">
@@ -502,9 +502,9 @@
               </div>
               <!-- /.comments suggestion-card__comments -->
             </div>
-          </div>
+          </a>
           <!-- /.suggestion-card -->
-          <div class="suggestion-card">
+          <a href="article.html" class="suggestion-card">
             <img src="../img/suggestion4.png" alt="" class="suggestion-card__image" />
             <h3 class="suggestion-card__title">В вашем портфолио могут быть фейковые работы</h3>
             <div class="suggestion-card__details">
@@ -523,7 +523,7 @@
               </div>
               <!-- /.comments suggestion-card__comments -->
             </div>
-          </div>
+          </a>
           <!-- /.suggestion-card -->
         </div>
         <!-- /.suggestion -->
@@ -795,7 +795,7 @@
             </div>
           </div>
           <!-- /.comment comments-content -->
-          <div class="commentation-more" onclick="myFunction()">
+          <div class="commentation-more commentation-more--visible" onclick="myFunction()">
             <div class="commentation-more__button">
               <svg class="commentation-more__button-icon">
                 <use xlink:href="../img/icons.svg#loading"></use>
@@ -962,6 +962,15 @@
             </ul>
             <!-- /.footer-top__list footer-top__list-list6 -->
           </div>
+          <a href="#body" class="up-cont">
+            <button class="up">
+              <span class="up__text">Наверх</span>
+              <svg class="up__arrow">
+                <use xlink:href="../img/icons.svg#arrow"></use>
+              </svg>
+            </button>
+          </a>
+          <!-- /.up-cont -->
           <!-- /.footer-top -->
           <div class="footer-line"></div>
           <!-- /.footer-line -->

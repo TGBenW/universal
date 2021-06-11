@@ -9,6 +9,9 @@
       display: none
   .hero
     grid-template-columns: 1fr 263px
+  .main
+    &__title
+      font-size: 34px
   .addread
     padding: 25px
     min-height: 260px
@@ -209,6 +212,9 @@
   .thanks-link
     &:hover
       text-decoration: underline
+  .up
+    &:hover
+      background-color: $line
   .modbutton
     &:hover
       background-color: darken($modal-button, 7%)
@@ -484,6 +490,8 @@
       &__text
         flex-basis: 100%
         margin-bottom: 15px
+  .gallery
+    grid-template-rows: 400px 70px
   .modal
     &__dialog
       width: 478px
@@ -784,7 +792,7 @@
         font-size: 14px
         line-height: 20px
         margin: 0
-        height: 40px
+        max-height: 40px
         overflow: hidden
       &__subtitle
         font-size: 12px
@@ -826,6 +834,8 @@
       line-height: 20px
       color: $text-light
       opacity: 0.85
+  .gallery
+    grid-template-rows: 1fr 70px
 @media (max-width: 576px)
   .addvertizer
     margin-top: 150px
