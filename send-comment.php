@@ -5,12 +5,8 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-//$car = array_key_exists('car', $_POST) ? $_POST['car'] : null;
 $comment = array_key_exists('comment', $_POST) ? $_POST['comment'] : null;
-//$name = $_POST['name'];
-//$phone = $_POST['phone'];
-//$message = $_POST['message'];
-//$email = $_POST['email'];
+
 
 // Формирование самого письма
 $title = "Новый комментарий UNV-Universal";

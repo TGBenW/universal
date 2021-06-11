@@ -5,15 +5,10 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-//$car = array_key_exists('car', $_POST) ? $_POST['car'] : null;
 $name = array_key_exists('name', $_POST) ? $_POST['name'] : null;
 $phone = array_key_exists('phone', $_POST) ? $_POST['phone'] : null;
 $message = array_key_exists('message', $_POST) ? $_POST['message'] : null;
 $email = array_key_exists('email', $_POST) ? $_POST['email'] : null;
-//$name = $_POST['name'];
-//$phone = $_POST['phone'];
-//$message = $_POST['message'];
-//$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новая заявка UNV-Universal";

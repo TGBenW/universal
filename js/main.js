@@ -127,10 +127,6 @@ $(document).ready(function () {
     $("#body").removeClass("oh");
   });
 
-  //comment spoiler
-  /* var commentButton = document.querySelector(".commentation-more");
-  var comment = document.querySelectorAll(".commentation-block"); */
-
   //form validation
   $(".form").each(function () {
     $(this).validate({
