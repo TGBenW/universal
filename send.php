@@ -8,14 +8,16 @@ require 'phpmailer/Exception.php';
 $select = array_key_exists('select', $_POST) ? $_POST['select'] : null;
 $message = array_key_exists('message', $_POST) ? $_POST['message'] : null;
 $email = array_key_exists('email', $_POST) ? $_POST['email'] : null;
+$box = array_key_exists('box', $_POST) ? $_POST['box'] : null;
 
 // Формирование самого письма
 $title = "Новая заявка UNV-Universal";
 $body = "
 <h2>Новое обращение</h2>
-<b>Тема:</b> $name<br>
+<b>Тема:</b> $select<br>
 <b>Сообщение:</b>$message<br>
 <b>Почта:</b> $email<br>
+<b>Согласие с обработкой данных:</b> $box<br>
 ";
 
 // Настройки PHPMailer

@@ -7,11 +7,13 @@
     bottom: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
-    visibility: hidden
+    //visibility: hidden
+    display: none
     opacity: 0
     transition: opacity .3s
     &--visible
-      visibility: visible
+      //visibility: visible
+      display: block
       opacity: 1
   &__dialog
     position: fixed
@@ -26,12 +28,14 @@
     border-radius: 10px
     z-index: 102
     transform: translate(-50%, -50%)
-    visibility: hidden
+    //visibility: hidden
+    display: none
     overflow: auto
     opacity: 0
     transition: opacity .3s
     &--visible
-      visibility: visible
+      //visibility: visible
+      display: block
       opacity: 1
   &__close
     position: absolute
@@ -160,3 +164,20 @@
     color: red
     line-height: 12px
     font-size: 12px
+  .btn
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 154px
+    height: 40px
+    font-size: 1rem
+    font-weight: 700
+    line-height: 20px
+    border-radius: 20px
+    background-color: $accent7
+    border: none
+    font-family: $lato-800
+    font-weight: 700
+    line-height: 20px
+    border-radius: 20px
+    color: $text-light

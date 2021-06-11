@@ -808,13 +808,13 @@ use.bookmarked {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   transition: opacity .3s;
 }
 
 .modal__overlay--visible {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
@@ -831,14 +831,14 @@ use.bookmarked {
   border-radius: 10px;
   z-index: 102;
   transform: translate(-50%, -50%);
-  visibility: hidden;
+  display: none;
   overflow: auto;
   opacity: 0;
   transition: opacity .3s;
 }
 
 .modal__dialog--visible {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
@@ -994,6 +994,25 @@ use.bookmarked {
   color: red;
   line-height: 12px;
   font-size: 12px;
+}
+
+.modal .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 20px;
+  background-color: #4592FF;
+  border: none;
+  font-family: "Lato Heavy", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
 }
 
 .aarticle {
@@ -1741,7 +1760,6 @@ use.bookmarked {
 .regular1-bottom {
   margin: auto;
   padding: 4% 30%;
-  cursor: pointer;
 }
 
 .regular1-bottom__download {
@@ -1751,6 +1769,7 @@ use.bookmarked {
   justify-content: space-between;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .regular1-bottom__download-icon {
@@ -5192,6 +5211,10 @@ use.bookmarked {
   .thanks-title {
     font-size: 1.6em;
   }
+  .aarticle__quote {
+    top: -20px;
+    left: -10px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -5384,6 +5407,12 @@ use.bookmarked {
     font-size: 12px;
     line-height: 16px;
     max-height: 96px;
+  }
+}
+
+@media (max-width: 380px) {
+  .ncomment {
+    padding: 30px 10px 35px 10px;
   }
 }
 

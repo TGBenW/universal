@@ -109,6 +109,9 @@ $(document).ready(function () {
     }
   });
 
+  /* var modalSubmit = $(".modal__form-btn");
+  modalSubmit.on("click", closeModal); */
+
   var modalOverlay = $(".modal__overlay");
   modalOverlay.on("click", closeModal);
 
