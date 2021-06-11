@@ -100,7 +100,7 @@ textarea {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 button, .abutton {
@@ -193,8 +193,8 @@ use.bookmarked {
 }
 
 .logo-image {
-  min-width: 40px;
-  min-height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .logo-text {
@@ -1433,8 +1433,18 @@ use.bookmarked {
 .likes__icon {
   width: 15px;
   height: 15px;
-  margin-right: 5px;
+  margin-right: 3px;
   fill: #FFFFFF;
+}
+
+.likes__count {
+  font-family: "Lato Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.4;
 }
 
 .comments2 {
@@ -1443,12 +1453,14 @@ use.bookmarked {
   align-items: center;
   opacity: 0.4;
   color: #FFFFFF;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .comments2__icon {
   width: 15px;
   height: 15px;
-  margin-right: 5px;
+  margin-right: 3px;
   fill: #FFFFFF;
 }
 
@@ -1513,6 +1525,7 @@ use.bookmarked {
   position: absolute;
   right: 0;
   top: 14px;
+  width: auto;
 }
 
 .xlarge-top__content {
@@ -1861,7 +1874,7 @@ use.bookmarked {
 
 .gallery-slider__button--prev {
   left: 35px;
-  background-image: url(../img/arrow-prev.svg);
+  background-image: url(../img/arrow-prev2.svg);
 }
 
 .gallery-slider__button--next {
@@ -2521,6 +2534,7 @@ use.bookmarked {
   top: 0;
   right: 0;
   height: 100%;
+  width: auto;
 }
 
 .suggestion {
