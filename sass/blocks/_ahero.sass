@@ -78,7 +78,8 @@
     min-height: 590px
     background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg.jpg") center no-repeat $text-dark
     background-size: cover
-    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-prev.jpg") center no-repeat $text-dark
+    &--prev
+      background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-prev.jpg") center no-repeat $text-dark
     &--next
       background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-next.jpg") center no-repeat $text-dark
   &-block1
@@ -87,6 +88,9 @@
     flex-direction: row
     align-items: center
     justify-content: space-between
+    &__nav
+      display: flex
+      align-items: center
     &__subtitle
       color: $accent7
     &__navigation
@@ -150,6 +154,8 @@
       display: flex
       flex-direction: row
       align-items: center
+    &__feedback
+      display: flex
 .home
   display: flex
   flex-direction: row

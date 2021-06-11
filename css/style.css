@@ -367,7 +367,7 @@ use.bookmarked {
   margin: 0;
   margin-bottom: 50px;
   max-height: 175px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .button {
@@ -573,6 +573,9 @@ use.bookmarked {
   min-height: 590px;
   background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg.jpg") center no-repeat #262D33;
   background-size: cover;
+}
+
+.ahero-section--prev {
   background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url("../img/ahero-bg-prev.jpg") center no-repeat #262D33;
 }
 
@@ -585,6 +588,11 @@ use.bookmarked {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.ahero-block2__nav {
+  display: flex;
+  align-items: center;
 }
 
 .ahero-block2__subtitle {
@@ -671,6 +679,10 @@ use.bookmarked {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.ahero-block4__feedback {
+  display: flex;
 }
 
 .home {
@@ -989,6 +1001,7 @@ use.bookmarked {
   max-height: 180px;
   border-radius: 10px;
   margin-bottom: 15px;
+  object-fit: cover;
 }
 
 .aarticle-card__title {
@@ -1484,7 +1497,7 @@ use.bookmarked {
   line-height: 30px;
   color: #262D33;
   max-height: 125px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .xlarge-top__text {
@@ -1922,8 +1935,8 @@ use.bookmarked {
   font-size: 40px;
   line-height: 50px;
   color: #FFFFFF;
-  max-height: 51px;
-  overflow: auto;
+  max-height: 100px;
+  overflow: hiddeb;
 }
 
 .investigation-wrapper__button {
@@ -2519,6 +2532,10 @@ use.bookmarked {
   background-color: #FFFFFF;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.thanks-title {
+  line-height: 30px;
 }
 
 .thanks-link {
@@ -4728,6 +4745,15 @@ use.bookmarked {
   .gallery__info {
     padding: 15px;
   }
+  .gallery-slider__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+  }
   .suggestion {
     padding-bottom: 90px;
     grid-template-columns: repeat(2, 1fr);
@@ -4753,11 +4779,21 @@ use.bookmarked {
   .aheader {
     position: relative;
   }
+  .aheader-section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
   .aheader__navbar {
     display: none;
   }
   .aheader-bottom {
     display: none;
+  }
+  .ahero-section {
+    padding-top: 70px;
   }
   .logo-text {
     display: block;
@@ -4889,9 +4925,6 @@ use.bookmarked {
   .commentation-section {
     padding-top: 45px;
   }
-  .comment-content__text {
-    max-width: 70%;
-  }
   .comment--reply {
     padding-left: 45px;
   }
@@ -4906,6 +4939,265 @@ use.bookmarked {
   }
   .part4__send {
     padding-top: 25px;
+  }
+  .thanks-section {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    margin-right: 0;
+  }
+  .ahero-block2 {
+    align-items: start;
+  }
+  .ahero-block2__navigation {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+  .ahero-block2__nav {
+    display: flex;
+  }
+  .ahero-block2__home {
+    flex-basis: 50%;
+    margin-bottom: 10px;
+  }
+  .ahero-block4__title {
+    font-size: 20px;
+    line-height: 28px;
+    max-height: 60px;
+  }
+  .aarticle-card {
+    display: none;
+  }
+  .aarticle-card--responsive {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .aarticle__text-lefter {
+    max-width: 100%;
+  }
+  .aarticle__text--special {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .commentation-head {
+    flex-wrap: wrap;
+  }
+  .commentation-head__text {
+    flex-basis: 100%;
+  }
+  .commentation-more {
+    margin-bottom: 30px;
+  }
+  .commentation-more__button {
+    margin-left: 34vw;
+  }
+  .add-comment {
+    margin-top: 15px;
+    max-width: none;
+  }
+  .thanks-title {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 540px) {
+  .ahero-section {
+    margin-bottom: 30px;
+  }
+  .ahero-block2 {
+    grid-column: 2 / 3;
+  }
+  .ahero-block3 {
+    grid-row: 1 / 2;
+  }
+  .ahero-block4 {
+    grid-column: 1 / 3;
+  }
+  .ahero-block4__text {
+    max-width: 60%;
+  }
+  .ahero-block4__details {
+    flex-wrap: wrap;
+  }
+  .ahero-block4__date {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .ahero-block4__comments {
+    margin-bottom: 5px;
+  }
+  .ahero-card {
+    bottom: 20px;
+  }
+  .gallery {
+    grid-template-columns: 2fr 1px 1.35fr;
+    padding-bottom: 0;
+  }
+  .gallery__info {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .gallery__name {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ahero {
+    padding-right: 0;
+  }
+  .ahero-card {
+    width: 140px;
+    grid-template-rows: 140px 1px 50px;
+  }
+  .ahero-card__top-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .ahero-card__top-author {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .ahero-card__top-job {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .ahero-card__top-papers {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .gallery {
+    grid-template-columns: 2fr 1px 1.8fr;
+    padding-bottom: 0;
+  }
+  .gallery__info {
+    padding-top: 5px;
+  }
+  .suggestion {
+    padding-bottom: 10px;
+  }
+  .aarticle-section {
+    padding-bottom: 15px;
+  }
+  .aarticle__subtitle {
+    padding-top: 15px;
+  }
+  .aarticle__list {
+    flex-wrap: wrap;
+  }
+  .aarticle-repost__buttons {
+    flex-wrap: wrap;
+  }
+  .aarticle__button {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  .comment-content {
+    max-width: 65vw;
+  }
+  .comment-content__text {
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 120px;
+  }
+  .commentation-more {
+    margin-bottom: 30px;
+  }
+  .commentation-more__button {
+    margin-left: 30vw;
+  }
+  .ncomment__part1 {
+    display: none;
+  }
+  .ncomment__part2 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  .ncomment__part3 {
+    display: none;
+  }
+  .ncomment__part4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  .part4 {
+    background: none;
+  }
+  .suggestion-card {
+    height: 100%;
+  }
+  .suggestion-card__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 440px) {
+  .logo-text {
+    display: none;
+  }
+  .ahero-card {
+    bottom: 50px;
+  }
+  .ahero-block3 {
+    padding-top: 0;
+  }
+  .ahero-block4__text {
+    max-width: 45vw;
+    line-height: 18px;
+  }
+  .comment {
+    grid-template-columns: 40px 1fr;
+    grid-column-gap: 15px;
+  }
+  .comment-image {
+    width: 40px;
+    height: 40px;
+  }
+  .commentation-head__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .part2-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .comment-content__top-author {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .comment-content__text {
+    font-size: 12px;
+    line-height: 16px;
+    max-height: 96px;
+  }
+}
+
+@media (max-width: 360px) {
+  .part2-title {
+    font-size: 14px;
+  }
+  .comment-content__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .back__link {
+    display: none;
+  }
+  .forward__link {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

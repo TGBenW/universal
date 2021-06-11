@@ -63,6 +63,29 @@
             </button>
           </div>
           <!-- /.button aheader__button -->
+          <ul class="navbar-menu" style="overflow-y: scroll; -webkit-overflow-scrolling: touch">
+            <li class="navbar-menu__item navbar-menu__item--first">
+              <a href="#articles" class="navbar-menu__link mobmenubtn">Статьи</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#blog" class="navbar-menu__link mobmenubtn">Новости</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#selection" class="navbar-menu__link mobmenubtn">Горячее</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">HTML</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">CSS</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">JavaScript</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">Web Design</a>
+            </li>
+          </ul>
         </div>
         <!-- /.aheader -->
       </div>
@@ -83,20 +106,23 @@
                 <a href="../index.html" class="home__link">На главную</a>
               </div>
               <!-- /.__home -->
-              <div class="back ahero-block2__back">
-                <svg class="back__icon">
-                  <use xlink:href="../img/icons.svg#arrow"></use>
-                </svg>
-                <a href="article-prev.html" class="back__link">Назад</a>
+              <div class="ahero-block2__nav">
+                <div class="back ahero-block2__back">
+                  <svg class="back__icon">
+                    <use xlink:href="../img/icons.svg#arrow"></use>
+                  </svg>
+                  <a href="article-prev.html" class="back__link">Назад</a>
+                </div>
+                <!-- /.__back -->
+                <div class="forward ahero-block2__forward">
+                  <a href="article-next.html" class="forward__link">Вперед</a>
+                  <svg class="forward__icon">
+                    <use xlink:href="../img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+                <!-- /.__forward -->
               </div>
-              <!-- /.__back -->
-              <div class="forward ahero-block2__forward">
-                <a href="article-next.html" class="forward__link">Вперед</a>
-                <svg class="forward__icon">
-                  <use xlink:href="../img/icons.svg#arrow"></use>
-                </svg>
-              </div>
-              <!-- /.__forward -->
+              <!-- /.ahero-block2__nav -->
             </div>
             <!-- /.__navigation -->
           </div>
@@ -121,20 +147,23 @@
                 <span class="date-ahero__date">6 августа, 10:30</span>
               </div>
               <!-- /.date ahero-block4__date -->
-              <div class="comments-ahero ahero-block4__comments">
-                <svg class="comments-ahero__icon">
-                  <use xlink:href="../img/icons.svg#comment"></use>
-                </svg>
-                <span class="comments-ahero__count">830</span>
+              <div class="ahero-block4__feedback">
+                <div class="comments-ahero ahero-block4__comments">
+                  <svg class="comments-ahero__icon">
+                    <use xlink:href="../img/icons.svg#comment"></use>
+                  </svg>
+                  <span class="comments-ahero__count">830</span>
+                </div>
+                <!-- /.comments ahero-block4__comments -->
+                <div class="likes-ahero ahero-block4__likes">
+                  <svg class="likes-ahero__icon">
+                    <use xlink:href="../img/icons.svg#heart"></use>
+                  </svg>
+                  <span class="likes-ahero__count">19</span>
+                </div>
+                <!-- /.likes ahero-block4__likes -->
               </div>
-              <!-- /.comments ahero-block4__comments -->
-              <div class="likes-ahero ahero-block4__likes">
-                <svg class="likes-ahero__icon">
-                  <use xlink:href="../img/icons.svg#heart"></use>
-                </svg>
-                <span class="likes-ahero__count">19</span>
-              </div>
-              <!-- /.likes ahero-block4__likes -->
+              <!-- /.ahero-block4__feedback -->
             </div>
           </div>
           <div class="ahero-card">
@@ -302,7 +331,7 @@
             влечет за собой процесс внедрения и модернизации
           </p>
           <div class="aarticle-card aarticle-card--responsive">
-            <h3 class="aarticle-card__top">Материал aaaпо теме</h3>
+            <h3 class="aarticle-card__top">Материал по теме</h3>
             <img src="../img/animal.png" alt="photo: girafe" class="aarticle-card__image" />
             <h3 class="aarticle-card__title">20+ инструментов для&nbsp;js&#8209;разработчика</h3>
             <p class="aarticle-card__text">
@@ -775,7 +804,8 @@
             </div>
           </div>
           <!-- /.commentation-more -->
-          <div id="new-comment" class="ncomment commentation-ncomment">
+          <div id="new-comment"></div>
+          <div class="ncomment commentation-ncomment">
             <div class="part1 ncomment__part1"></div>
             <div class="part2 ncomment__part2">
               <span class="part2-title">Что вы думаете на этот счет?</span>

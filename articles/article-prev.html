@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <title>UNV-Universal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -19,19 +36,56 @@
     <header class="aheader-section">
       <div class="container">
         <div class="aheader">
-          <img src="../img/logo-dark.png" alt="" class="logo aheader__logo" />
-          <ul class="navbar aheader__navbar">
-            <li class="navbar__item"><a href="#aarticle" class="navbar__link">Статьи</a></li>
-            <li class="navbar__item"><a href="#ahero" class="navbar__link">Новости</a></li>
-            <li class="navbar__item"><a href="#suggestion" class="navbar__link">Горячее</a></li>
-            <li class="navbar__item"><a href="#footer" class="navbar__link">HTML</a></li>
-            <li class="navbar__item"><a href="#footer" class="navbar__link">CSS</a></li>
-            <li class="navbar__item"><a href="#footer" class="navbar__link">JavaScript</a></li>
-            <li class="navbar__item"><a href="#footer" class="navbar__link">Web Design</a></li>
+          <a href="../index.html" class="logo aheader__logo">
+            <img src="../img/logo-blue.svg" alt="" class="logo-image" />
+            <img src="../img/universal-dark.svg" alt="" class="logo-text" />
+          </a>
+          <ul class="anavbar aheader__navbar">
+            <li class="anavbar__item"><a href="#aarticle" class="anavbar__link">Статьи</a></li>
+            <li class="anavbar__item"><a href="#ahero" class="anavbar__link">Новости</a></li>
+            <li class="anavbar__item"><a href="#suggestion" class="anavbar__link">Горячее</a></li>
+            <li class="anavbar__item"><a href="#footer" class="anavbar__link">HTML</a></li>
+            <li class="anavbar__item"><a href="#footer" class="anavbar__link">CSS</a></li>
+            <li class="anavbar__item"><a href="#footer" class="anavbar__link">JavaScript</a></li>
+            <li class="anavbar__item"><a href="#footer" class="anavbar__link">Web Design</a></li>
           </ul>
-          <!-- /.navbar aheader__navbar -->
-          <button data-toggle="modal" class="modbutton aheader__button">оставить заявку</button>
+          <!-- /.anavbar aheader__navbar -->
+          <div class="menu aheader__buttons">
+            <button data-toggle="modal" class="modbutton aheader__button">оставить заявку</button>
+            <!-- /.button aheader-top__button -->
+            <button
+              class="menu-button aheader__menu-button"
+              aria-label="Navigation menu burger button"
+            >
+              <span class="menu-button__line menu-button__line-aline"></span>
+              <span class="menu-button__line menu-button__line-aline"></span>
+              <span class="menu-button__line menu-button__line-aline"></span>
+            </button>
+          </div>
           <!-- /.button aheader__button -->
+          <ul class="navbar-menu" style="overflow-y: scroll; -webkit-overflow-scrolling: touch">
+            <li class="navbar-menu__item navbar-menu__item--first">
+              <a href="#articles" class="navbar-menu__link mobmenubtn">Статьи</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#blog" class="navbar-menu__link mobmenubtn">Новости</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#selection" class="navbar-menu__link mobmenubtn">Горячее</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">HTML</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">CSS</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">JavaScript</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#footer" class="navbar-menu__link mobmenubtn">Web Design</a>
+            </li>
+          </ul>
         </div>
         <!-- /.aheader -->
       </div>
@@ -49,23 +103,26 @@
                 <svg class="home__icon">
                   <use xlink:href="../img/icons.svg#home"></use>
                 </svg>
-                <a href="#" class="home__link">На главную</a>
+                <a href="../index.html" class="home__link">На главную</a>
               </div>
               <!-- /.__home -->
-              <div class="back ahero-block2__back">
-                <svg class="back__icon">
-                  <use xlink:href="../img/icons.svg#arrow"></use>
-                </svg>
-                <a href="#" class="back__link">Назад</a>
+              <div class="ahero-block2__nav">
+                <div class="back ahero-block2__back">
+                  <svg class="back__icon">
+                    <use xlink:href="../img/icons.svg#arrow"></use>
+                  </svg>
+                  <a href="#" class="back__link">Назад</a>
+                </div>
+                <!-- /.__back -->
+                <div class="forward ahero-block2__forward">
+                  <a href="article.html" class="forward__link">Вперед</a>
+                  <svg class="forward__icon">
+                    <use xlink:href="../img/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+                <!-- /.__forward -->
               </div>
-              <!-- /.__back -->
-              <div class="forward ahero-block2__forward">
-                <a href="article.html" class="forward__link">Вперед</a>
-                <svg class="forward__icon">
-                  <use xlink:href="../img/icons.svg#arrow"></use>
-                </svg>
-              </div>
-              <!-- /.__forward -->
+              <!-- /.ahero-block2__nav -->
             </div>
             <!-- /.__navigation -->
           </div>
@@ -76,11 +133,11 @@
           </div>
           <div class="ahero-block4">
             <h1 class="ahero-block4__title">
-              Список Youtube каналов для тех, кто только начинает изучать разработку
+              Новый налоговый режим для фрилансеров — налог на проф. доход
             </h1>
             <p class="ahero-block4__text">
-              Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные
-              айти. Тут можно найти видеоуроки, лекции и бесплатные курсы.
+              Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто
+              работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
             </p>
             <div class="ahero-block4__details">
               <div class="date-ahero ahero-block4__date">
@@ -90,20 +147,23 @@
                 <span class="date-ahero__date">6 августа, 10:30</span>
               </div>
               <!-- /.date ahero-block4__date -->
-              <div class="comments-ahero ahero-block4__comments">
-                <svg class="comments-ahero__icon">
-                  <use xlink:href="../img/icons.svg#comment"></use>
-                </svg>
-                <span class="comments-ahero__count">830</span>
+              <div class="ahero-block4__feedback">
+                <div class="comments-ahero ahero-block4__comments">
+                  <svg class="comments-ahero__icon">
+                    <use xlink:href="../img/icons.svg#comment"></use>
+                  </svg>
+                  <span class="comments-ahero__count">830</span>
+                </div>
+                <!-- /.comments ahero-block4__comments -->
+                <div class="likes-ahero ahero-block4__likes">
+                  <svg class="likes-ahero__icon">
+                    <use xlink:href="../img/icons.svg#heart"></use>
+                  </svg>
+                  <span class="likes-ahero__count">19</span>
+                </div>
+                <!-- /.likes ahero-block4__likes -->
               </div>
-              <!-- /.comments ahero-block4__comments -->
-              <div class="likes-ahero ahero-block4__likes">
-                <svg class="likes-ahero__icon">
-                  <use xlink:href="../img/icons.svg#heart"></use>
-                </svg>
-                <span class="likes-ahero__count">19</span>
-              </div>
-              <!-- /.likes ahero-block4__likes -->
+              <!-- /.ahero-block4__feedback -->
             </div>
           </div>
           <div class="ahero-card">
@@ -233,7 +293,7 @@
           <div class="aarticle-card">
             <h3 class="aarticle-card__top">Материал по теме</h3>
             <img src="../img/animal.png" alt="photo: girafe" class="aarticle-card__image" />
-            <h3 class="aarticle-card__title">20+ инструментов для js-разработчика</h3>
+            <h3 class="aarticle-card__title">20+ инструментов для&nbsp;js&#8209;разработчика</h3>
             <p class="aarticle-card__text">
               Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты
               помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в
@@ -258,19 +318,50 @@
           </div>
           <!-- /.article-card -->
           <!-- /.article__subtitle -->
-          <p class="aarticle__text">
+          <p class="aarticle__text aarticle__text-left">
             Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
             роль в формировании дальнейших направлений развития. Значимость этих проблем настолько
             очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности
             влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
           </p>
-          <p class="aarticle__text">
+          <p class="aarticle__text aarticle__text-left aarticle__text-addindent">
             Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
             роль в формировании дальнейших направлений развития. Значимость этих проблем настолько
             очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности
             влечет за собой процесс внедрения и модернизации
           </p>
-          <p class="aarticle__text">
+          <div class="aarticle-card aarticle-card--responsive">
+            <h3 class="aarticle-card__top">Материал по теме</h3>
+            <img src="../img/animal.png" alt="photo: girafe" class="aarticle-card__image" />
+            <h3 class="aarticle-card__title">20+ инструментов для&nbsp;js&#8209;разработчика</h3>
+            <p class="aarticle-card__text">
+              Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты
+              помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в
+              виде...
+            </p>
+            <div class="aarticle-card__details">
+              <div class="eye aarticle-card__eye">
+                <svg class="eye__icon">
+                  <use xlink:href="../img/icons.svg#eye"></use>
+                </svg>
+                <span class="eye__count">1,623</span>
+              </div>
+              <!-- /.eye aarticle-card__eye -->
+              <div class="acomments aarticle-card__comments">
+                <svg class="acomments__icon">
+                  <use xlink:href="../img/icons.svg#comment"></use>
+                </svg>
+                <span class="acomments__count">102</span>
+              </div>
+              <!-- /.comments aarticle-card__comments -->
+            </div>
+          </div>
+          <!-- /.article-card -->
+          <p
+            class="
+              aarticle__text aarticle__text-left aarticle__text-lefter aarticle__text-addindent
+            "
+          >
             Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
             роль в формировании дальнейших направлений развития. Значимость этих проблем настолько
             очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности
@@ -285,7 +376,7 @@
             направлений прогрессивного развития. Не следует, однако забывать, что новая модель
             организационной деятельности в значительной степени обуславливает.
           </p>
-          <p class="aarticle__text">
+          <p class="aarticle__text aarticle__text--notopindent">
             Таким образом консультация с широким активом способствует подготовки и реализации
             направлений прогрессивного развития. Не следует, однако забывать, что новая модель
             организационной деятельности в значительной степени обуславливает создание модели
@@ -599,20 +690,18 @@
           <div id="myDIV" class="comment-hidden" style="display: none">
             <div class="comment comment--primary commentation-block">
               <img
-                src="../img/kris-jakov.png"
-                alt="photo: Крис Яков"
+                src="../img/vasilisa-lebedeva.png"
+                alt="photo: Василиса Лебедева"
                 class="avatar comment-image"
               />
               <div class="comment-content">
                 <div class="comment-content__top">
-                  <h5 class="comment-content__top-author">Name Surname</h5>
-                  <span class="comment-content__top-date">date</span>
+                  <h5 class="comment-content__top-author">Василиса Лебедева</h5>
+                  <span class="comment-content__top-date">17 июля, 18:47</span>
                 </div>
                 <p class="comment-content__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, quo cum eaque
-                  perspiciatis amet earum ea expedita iure delectus provident, incidunt natus
-                  dignissimos temporibus. Perferendis sit repudiandae ipsam fugit sequi praesentium
-                  provident.
+                  Кому нужен этот налоговый режим? Лишние расходы обычных людей. Пополнение бюджета
+                  страны за счёт подрабатывающих людей.
                 </p>
                 <div class="comment-content__details">
                   <div class="reply comment-content__details-reply">
@@ -625,7 +714,7 @@
                     <svg class="dislike__icon dislike__icon-upvote">
                       <use xlink:href="../img/icons.svg#like"></use>
                     </svg>
-                    <span class="dislike__text">0</span>
+                    <span class="dislike__text dislike__text--negative">-1</span>
                     <svg class="dislike__icon dislike__icon-downvote">
                       <use xlink:href="../img/icons.svg#dislike"></use>
                     </svg>
@@ -636,20 +725,18 @@
             <!-- /.comment comments-content -->
             <div class="comment comment--reply commentation-block">
               <img
-                src="../img/kris-jakov.png"
-                alt="photo: Крис Яков"
+                src="../img/mikhail-fomin.png"
+                alt="photo: Михаил Фомин"
                 class="avatar comment-image"
               />
               <div class="comment-content">
                 <div class="comment-content__top">
-                  <h5 class="comment-content__top-author">Name Surname</h5>
-                  <span class="comment-content__top-date">date</span>
+                  <h5 class="comment-content__top-author">Михаил Фомин</h5>
+                  <span class="comment-content__top-date">17 июля, 20:41</span>
                 </div>
                 <p class="comment-content__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, quo cum eaque
-                  perspiciatis amet earum ea expedita iure delectus provident, incidunt natus
-                  dignissimos temporibus. Perferendis sit repudiandae ipsam fugit sequi praesentium
-                  provident.
+                  Такой статус приравнивает любого человека, работающего на фрилансе, к офисному
+                  рабочему, только с меньшим процентом. Это очень удобно!
                 </p>
                 <div class="comment-content__details">
                   <div class="reply comment-content__details-reply">
@@ -662,7 +749,7 @@
                     <svg class="dislike__icon dislike__icon-upvote">
                       <use xlink:href="../img/icons.svg#like"></use>
                     </svg>
-                    <span class="dislike__text">0</span>
+                    <span class="dislike__text dislike__text--upvote">+4</span>
                     <svg class="dislike__icon dislike__icon-downvote">
                       <use xlink:href="../img/icons.svg#dislike"></use>
                     </svg>
@@ -673,20 +760,19 @@
             <!-- /.comment comments-content -->
             <div class="comment comment--primary commentation-block">
               <img
-                src="../img/kris-jakov.png"
-                alt="photo: Крис Яков"
+                src="../img/alisa-matveeva.png"
+                alt="photo: Алиса Матвеева"
                 class="avatar comment-image"
               />
               <div class="comment-content">
                 <div class="comment-content__top">
-                  <h5 class="comment-content__top-author">Name Surname</h5>
-                  <span class="comment-content__top-date">date</span>
+                  <h5 class="comment-content__top-author">Алиса Матвеева</h5>
+                  <span class="comment-content__top-date">17 июля, 12:51</span>
                 </div>
                 <p class="comment-content__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, quo cum eaque
-                  perspiciatis amet earum ea expedita iure delectus provident, incidunt natus
-                  dignissimos temporibus. Perferendis sit repudiandae ipsam fugit sequi praesentium
-                  provident.
+                  Некоторым фрилансерам, действительно удобно получить такой статус, все доходы
+                  контролируются, зарплата приходит регулярно. А что делать тем, кто подрабатывает
+                  несколько раз в месяц?
                 </p>
                 <div class="comment-content__details">
                   <div class="reply comment-content__details-reply">
@@ -699,7 +785,7 @@
                     <svg class="dislike__icon dislike__icon-upvote">
                       <use xlink:href="../img/icons.svg#like"></use>
                     </svg>
-                    <span class="dislike__text">0</span>
+                    <span class="dislike__text dislike__text--positive">7</span>
                     <svg class="dislike__icon dislike__icon-downvote">
                       <use xlink:href="../img/icons.svg#dislike"></use>
                     </svg>
@@ -718,7 +804,8 @@
             </div>
           </div>
           <!-- /.commentation-more -->
-          <div id="new-comment" class="ncomment commentation-ncomment">
+          <div id="new-comment"></div>
+          <div class="ncomment commentation-ncomment">
             <div class="part1 ncomment__part1"></div>
             <div class="part2 ncomment__part2">
               <span class="part2-title">Что вы думаете на этот счет?</span>
@@ -759,7 +846,7 @@
     <!-- /.comments-section -->
     <section class="newsletter-section">
       <div class="container">
-        <div class="newsletter">
+        <div class="newsletter newsletter-article">
           <h2 class="newsletter__title">Подпишитесь на нашу рассылку</h2>
           <form
             action="../send-article.php"
@@ -881,7 +968,7 @@
           <div class="footer-middle">
             <div class="footer-middle__navbar">
               <a href="#" class="footer-middle__logo">
-                <img src="../img/logo-blue.png" alt="" class="footer-middle__logo" />
+                <img src="../img/logo-blue.svg" alt="" class="footer-middle__logo" />
               </a>
               <ul class="footer-middle__list">
                 <li class="footer-middle__item">
