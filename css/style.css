@@ -590,7 +590,10 @@ use.bookmarked {
 
 .ahero-card__bottom {
   padding: 15px 0;
-  margin: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .ahero-card__bottom-link {
@@ -2052,14 +2055,22 @@ use.bookmarked {
 }
 
 .blog-right__more {
-  margin: auto;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.blog-right__more-link {
+  text-decoration: none;
   font-family: "Lato Black", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
   color: #262D33;
-  cursor: pointer;
+  display: block;
 }
 
 .bcard {
@@ -3477,7 +3488,8 @@ use.bookmarked {
   .ahero-card__bottom:hover,
   .aarticle__item:hover,
   .add-comment:hover,
-  .commentation-more:hover {
+  .commentation-more:hover,
+  .blog-right__more:hover {
     background-color: #F5F5F5;
     border-color: #c7c8ca;
   }
