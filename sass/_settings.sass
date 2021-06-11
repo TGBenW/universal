@@ -1,5 +1,6 @@
 *
   box-sizing: border-box
+  scroll-behavior: smooth
 
 body
   background-color: $bg
@@ -59,32 +60,14 @@ use.bookmarked
     margin-right: 14px
 .main__link
   cursor: auto
-.up
-  padding: 5px 10px
-  max-width: 135px
-  overflow: hidden
-  border-radius: 10px
-  border: 1px solid $line
-  display: flex
-  align-items: center
-  justify-content: center
-  background-color: #FFFFFF
-  &-cont
-    width: 100%
-    display: flex
-    justify-content: end
-    padding-bottom: 10px
-    text-decoration: none
-  &__text
-    font-family: $lato-400
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 20px
-    color: $text-primary
-  &__arrow
-    margin-left: 5px
-    width: 20px
-    height: 20px
-    fill: $text-dark
-    transform: rotate(270deg)
+.scrollup
+  width: 40px
+  height: 40px
+  opacity: 0.4
+  position: fixed
+  bottom: 50px
+  right: 100px
+  z-index: 999
+  display: none
+  text-indent: -9999px
+  background: url("../img/up-arrow.png") no-repeat

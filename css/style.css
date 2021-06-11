@@ -40,6 +40,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -123,41 +124,17 @@ use.bookmarked {
   cursor: auto;
 }
 
-.up {
-  padding: 5px 10px;
-  max-width: 135px;
-  overflow: hidden;
-  border-radius: 10px;
-  border: 1px solid #D9DADB;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #FFFFFF;
-}
-
-.up-cont {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  padding-bottom: 10px;
-  text-decoration: none;
-}
-
-.up__text {
-  font-family: "Lato Regular", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4B5157;
-}
-
-.up__arrow {
-  margin-left: 5px;
-  width: 20px;
-  height: 20px;
-  fill: #262D33;
-  transform: rotate(270deg);
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 999;
+  display: none;
+  text-indent: -9999px;
+  background: url("../img/up-arrow.png") no-repeat;
 }
 
 .header {
@@ -3410,9 +3387,15 @@ use.bookmarked {
   .newsletter__title {
     overflow: hidden;
   }
+  .scrollup {
+    right: 50px;
+  }
 }
 
 @media (min-width: 992px) {
+  .scrollup:hover {
+    opacity: 0.8;
+  }
   .navbar__link:hover,
   .addread__title:hover,
   .footer-top__link:hover,
@@ -4170,6 +4153,10 @@ use.bookmarked {
   .modal__message {
     min-height: 50px;
   }
+  .scrollup {
+    opacity: 0.3;
+    right: 35px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -4422,6 +4409,10 @@ use.bookmarked {
   .modal__dialog {
     width: 92%;
     padding: 20px 20px;
+  }
+  .scrollup {
+    bottom: 20px;
+    right: 10px;
   }
 }
 
